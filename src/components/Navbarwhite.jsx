@@ -51,7 +51,7 @@ const Navbarwhite = () => {
          <ul
            ref={menuRef} 
            className={`flex max-lg:flex-col items-center absolute top-15 lg:static w-[60%] text-center gap-7 lg:gap-9 abouthero min-lg:bg-none max-lg:text-white font-medium lg:w-auto lg:bg-transparent lg:flex-row z-9999 ${
-             isOpen ? 'h-[50vh] w-full right-0 animate-slide-in duration-200' : 'h-[0px]'
+             isOpen ? 'min-h-[50svh] w-full right-0 animate-slide-in duration-200' : 'h-[0px]'
            }`}
          >
            <li className={`block ${isOpen ? "pt-15" : "max-lg:hidden"} pt-2 justify-between 

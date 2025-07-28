@@ -52,7 +52,7 @@ const Navbar = () => {
         <ul
           ref={menuRef} 
           className={`flex max-lg:flex-col items-center absolute top-20 lg:static w-[60%] text-center gap-7 lg:gap-9 bg-blue-900 min-lg:bg-none max-lg:text-white font-medium lg:w-auto lg:bg-transparent lg:flex-row z-9999 ${
-            isOpen ? 'h-[50vh] w-full right-0 animate-slide-in duration-200' : 'h-[0px]'
+            isOpen ? 'min-h-[50svh] w-full right-0 animate-slide-in duration-200' : 'h-[0px]'
           }`}
         >
           <li className={`block ${isOpen ? "pt-20" : "max-lg:hidden"} justify-between 

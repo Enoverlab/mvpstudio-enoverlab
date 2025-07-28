@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
     <section>
-      <div className='relative w-full max-h-[50vh] flex justify-center mx-auto mt-[60px]' style={{
+      <div className='relative w-full min-h-[50svh] flex justify-center mx-auto mt-[60px]' style={{
         backgroundImage: "url('/abouthero.png')",
         backgroundSize: 'contain',
         backgroundPosition: 'center',
