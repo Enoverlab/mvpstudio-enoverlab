@@ -13,7 +13,7 @@ const Usspecial = () => {
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 p-4 lg:p-10 xl:px-[86px]'>
-                <div className='w-full h-[220px] md:h-[359px] bg-[#c5dfe7] flex flex-row rounded-4xl gap-5 border-white border-1 relative'>
+                <div className='w-full h-[220px] md:h-[359px] bg-[#cadce2] flex flex-row rounded-4xl gap-5 border-white border-1 relative'>
                 <div className='w-1/2 mt-[60px] md:mt-[120px] py-8'><img src='/01.png' className='w-[315px] h-[128px] md:h-[207px]'/></div>
                 <div className='w-1/2 flex flex-col p-5 md:py-10 gap-3 md:gap-5'>
                     <h1 className='text-[#484848] text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold'>Empower Startups</h1>

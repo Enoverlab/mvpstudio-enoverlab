@@ -54,7 +54,7 @@ const Navbarwhite = () => {
              isOpen ? 'min-h-[50svh] w-full right-0 animate-slide-in duration-200' : 'h-[0px]'
            }`}
          >
-           <li className={`block ${isOpen ? "pt-15" : "max-lg:hidden"} pt-2 justify-between 
+           <li className={`block ${isOpen ? "pt-10" : "max-lg:hidden"} pt-2 justify-between 
                   text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/">Home</Link></li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/about">About Us</Link></li>
