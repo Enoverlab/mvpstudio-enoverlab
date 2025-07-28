@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+@import "swiper/css/bundle";
+@import "swiper/css/effect-coverflow";
+@import "swiper/css/navigation";
+@import "swiper/css/autoplay";
+
+
+
+:root{
+    --hero-gradient: linear-gradient(180deg, #D9D9D9 0%, rgba(81, 222, 229, 0.2) 0%, rgba(101, 199, 204, 0.146304) 6.08%, rgba(146, 146, 146, 0.02) 81.75%, #C7EEFB 100%);
+
+    --about-hero-gradient: linear-gradient(
+        144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%
+    );
+
+    --swiper-button-next: url('/arrowright.svg');
+      
+}
+body{
+    font-family: "Inter", sans-serif;
+    
+}
+
+.swiper-button-next::after{
+    content: url('/arrowrightfifty.png');
+}
+
+.swiper-button-prev::after{
+    content: url('/arrowleftfifty.png');
+}
+
+.swiper-button-next, .swiper-button-prev{
+    bottom:0;
+    top: 300px;
+    transform: translateX(-45%);
+}
+
+.swiper-button-prev {
+    left: calc(50% - 20px);
+}
+
+.swiper-button-next {
+    right: calc(50% - 60px);
+}
+
+.abouthero {
+    background: var(--about-hero-gradient);
+}
+
+::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-track{
+    background: #e2dfdf;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #D9D9D9;
+    border-radius: 2px;
+}
