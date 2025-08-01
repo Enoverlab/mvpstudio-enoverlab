@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -32,13 +33,39 @@ const Aboutdropdown = () => {
   return (
     <section className="absolute hidden lg:block top-20 left-0 w-full min-h-[100vh] max-h-[100vh] bg-gradient-to-b from-[#FBECF4] to-[#DDECFF] py-6 z-50 animate-slide-in duration-200">
                      <div className="max-w-6xl mx-auto relative">
-                       <h2 className="text-center text-2xl md:text-3xl font-normal mb-2 mt-2">
+                       <motion.h2
+                       initial={{ opacity:0, y:-50 }}
+    whileInView={{ opacity:1, y:0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.1,
+      damping: 20,
+    }}
+                       className="text-center text-2xl md:text-3xl font-normal mb-2 mt-2">
                          Our Mvp <span className="font-bold">Studio</span> Development
-                       </h2>
-                       <div className="text-center italic font-light text-3xl mb-8">Services</div>
+                       </motion.h2>
+                       <motion.div
+                       initial={{ opacity:0, y:-50 }}
+    whileInView={{ opacity:1, y:0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+                       className="text-center italic font-light text-3xl mb-8">Services</motion.div>
                        <div className="grid grid-cols-4 gap-6">
                          {services.map((service, idx) => (
-                           <div
+                           <motion.div
+                           initial={{ opacity:0, y:-50 }}
+    whileInView={{ opacity:1, y:0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.3,
+      damping: 20,
+    }}
                              key={idx}
                              className="bg-white/40 border border-[#D2DEFF] rounded-xl p-6 flex flex-col items-start text-start min-h-[260px] hover:shadow-lg transition"
                            >
@@ -52,7 +79,7 @@ const Aboutdropdown = () => {
                                <div className='absolute bottom-6'><span>Contact Us</span>
                                <span className='inline-block ml-3'><FaArrowRight/></span></div>
                              </a>
-                           </div>
+                           </motion.div>
                          ))}
                        </div>
                      </div>

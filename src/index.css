@@ -29,6 +29,13 @@
      #b7b2ce 100%
     );
 
+    --talents-gradientmobile: linear-gradient(
+    270deg,
+     #ffffff 25%,
+     #51dee5 95%
+    );
+
+
     --swiper-button-next: url('/arrowright.svg');
       
 }
@@ -84,3 +91,10 @@ body{
 .talentsgradient{
     background: var(--talents-gradient);
 }
+
+@media screen and (max-width: 768px) {
+    .talentsgradient{
+        background: var(--talents-gradientmobile)
+    }
+}
+

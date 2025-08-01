@@ -10,7 +10,8 @@ const Talents = () => {
       <Navbar/>
       <Hero/>
       <Talentsreviews/>
-      <Footer/>
+      <Footer/> 
+      
     </div>
   )
 }
