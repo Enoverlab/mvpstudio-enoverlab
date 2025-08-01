@@ -30,9 +30,10 @@
     );
 
     --talents-gradientmobile: linear-gradient(
-    270deg,
+    250deg,
      #ffffff 25%,
-     #51dee5 95%
+     #51dee5 35%,
+     #ccc9d6 50%
     );
 
 

@@ -11,7 +11,6 @@ const Talents = () => {
       <Hero/>
       <Talentsreviews/>
       <Footer/> 
-      
     </div>
   )
 }
