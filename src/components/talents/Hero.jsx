@@ -20,18 +20,18 @@ const Hero = () => {
             <p className='text-black'>Explore our pool of top tire professionals from product designer to software engineers, marketing strategists to data analysis our curated network of talents brings innovation, skill, and excellence to every project. Each profile represents a proven expert ready to deliver results</p>
         </motion.div>
 
-            <Link to='/talentsform'><motion.button
+            <Link to='/talentsform'><motion.div
             initial={{ opacity:0, y:-50 }}
     whileInView={{ opacity:1, y:0}}
     transition={{
       type: "spring",
-      stiffness: 50,
+      stiffness: 100,
       delay: 0.4,
       damping: 20,
     }}
-            className="px-2 md:px-3 w-[150px] md:w-[174px] h-[37px] md:h-[48px] py-2 rounded-lg bg-[#1051FF] text-white text-sm lg:font-medium hover:bg-[#1060ffc2] transition flex justify-center items-center mx-auto mt-6">
+            ><button className="px-2 md:px-3 w-[150px] md:w-[174px] h-[37px] md:h-[48px] py-2 rounded-lg bg-[#1051FF] text-white text-sm lg:font-medium hover:bg-[#1060ffc2] transition flex justify-center items-center mx-auto mt-6">
             <img src='/hire.png' className='inline-block mr-2 w-4 md:w-5 h-4 md:h-5'/>Hire Talents
-          </motion.button></Link>
+          </button></motion.div></Link>
     </section>
     </>
   )
