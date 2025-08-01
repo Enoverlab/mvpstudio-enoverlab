@@ -124,7 +124,7 @@ const ProjectDetails = () => {
               >
                 <div className='bg-white flex flex-row w-full md:w-[90%] md:left-[5%] p-1 md:p-2 absolute bottom-2 gap-2'>
                   <div className='w-[60%] flex flex-col gap-3 text-[10px] whitespace-pre'>
-                    <p>{expert.expertname}</p>
+                    <p>{expert.expertfirstname} <span>{expert.expertsecondname}</span></p>
                     <p>{expert.role}</p>
                   </div>
                   <div className='w-[40%] flex flex-col gap-2'>
@@ -133,7 +133,7 @@ const ProjectDetails = () => {
                       <FaFacebook/>
                       <FaWhatsapp/>
                     </div>
-                    <button className="text-[8px] lg:text-xs text-[#1051FF] bg-[#DFDFEE] rounded-lg py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] flex justify-center items-center whitespace-pre">{expert.hire}</button>
+                    <button className="text-[8px] text-[#1051FF] bg-[#DFDFEE] rounded-lg py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] flex justify-center items-center whitespace-pre">Hire <span>{expert.expertfirstname}</span></button>
                   </div>
                 </div>
               </div>

@@ -1,12 +1,21 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 const Hero = () => {
   return (
     <>
     <section>
-      <div className='relative w-full min-h-[50svh] flex justify-center mx-auto mt-[60px]' style={{
+      <motion.div
+      initial={{ opacity:0, scale:0.7 }}
+    whileInView={{ opacity:1, scale:1.0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+      className='relative w-full min-h-[50svh] flex justify-center mx-auto mt-[60px]' style={{
         backgroundImage: "url('/abouthero.png')",
-        backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         height: '50vh',
@@ -20,7 +29,7 @@ const Hero = () => {
             <p className='text-xs lg:text-sm '>We partner with visionary founders to turn their ideas into market ready products. Through a deeply collaborative process, we blend your vision with our unique expertise to deliver scalable MVPs that are fast, affordable, and tailored to your target market.</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
     </>
   )

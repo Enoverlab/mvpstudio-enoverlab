@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 const Talents = () => {
   return (
-    <div className='bg-[#F3F3FF] overflow-hidden'>
+    <div className='talentsgradient overflow-hidden'>
       <Navbar/>
       <Hero/>
       <Talentsreviews/>

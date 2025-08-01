@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 const Reshape = () => {
@@ -16,18 +17,45 @@ const Reshape = () => {
           To redefine how startups and small businesses bring ideas to life.
         </div>
 
-        <div className='w-full p-5 md:p-15 gap-5 flex flex-col sm:flex-row   max-md:px-10'>
+        <motion.div
+        initial={{ opacity:0, scale:0.7 }}
+    whileInView={{ opacity:1, scale:1.0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+        className='w-full p-5 md:p-15 gap-5 flex flex-col sm:flex-row   max-md:px-10'>
         <div className='w-full items-center justify-center flex sm:w-1/3 rounded-2xl bg-cover'>
           <img src="/reshape1.png" />  
         </div>
-        <div className='w-full items-center justify-center flex sm:w-1/3 rounded-2xl bg-cover'>
+        <motion.div
+        initial={{ opacity:0, scale:0.7 }}
+    whileInView={{ opacity:1, scale:1.0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+        className='w-full items-center justify-center flex sm:w-1/3 rounded-2xl bg-cover'>
           <img src="/reshape2.png" />  
-        </div>
-        <div className='w-full items-center justify-center flex sm:w-1/3 rounded-2xl bg-cover'>
+        </motion.div>
+        <motion.div
+        initial={{ opacity:0, scale:0.7 }}
+    whileInView={{ opacity:1, scale:1.0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+        className='w-full items-center justify-center flex sm:w-1/3 rounded-2xl bg-cover'>
           <img src="/reshape3.png" />  
-        </div>
+        </motion.div>
         
-        </div>
+        </motion.div>
       </div>
     </section>
     </>

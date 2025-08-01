@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useRef, useEffect, useState } from 'react'
 
 const experts = [
@@ -105,7 +106,16 @@ const Meettheexperts = () => {
 
   return (
     <section ref={sectionRef} className='bg-[#FFFFFF] mt-5 py-8'>
-      <div className='flex flex-col gap-1 justify-center items-center px-10 text-center mb-10'>
+      <motion.div
+      initial={{ opacity:0, y:40 }}
+    whileInView={{ opacity:1, y:0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+      className='flex flex-col gap-1 justify-center items-center px-10 text-center mb-10'>
         <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
           <img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5' alt="icon" />
           Meet The Team
@@ -116,7 +126,7 @@ const Meettheexperts = () => {
         <div className='text-[14px] font-normal text-[#595C63]'>
           Our diverse team of passionate professionals is dedicated to delivering excellence at every step of the way.
         </div>
-      </div>
+      </motion.div>
       <div className=" w-full h-[500px] flex flex-row mt-10">
         {/* Central Progress Circle */}
         <div className='flex w-full lg:w-[70%] justify-end items-end -p-5  relative'>
@@ -182,11 +192,20 @@ const Meettheexperts = () => {
           );
         })}
         </div>
-        <div className='w-[35%] flex flex-col xl:px-2 gap-7 max-lg:hidden mt-15 xl:mt-25 xl:pr-7'>
+        <motion.div
+        initial={{ opacity:0, x:40 }}
+    whileInView={{ opacity:1, x:0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.5,
+      damping: 20,
+    }}
+        className='w-[35%] flex flex-col xl:px-2 gap-7 max-lg:hidden mt-15 xl:mt-25 xl:pr-7'>
         <h1 className='text-[#12141D] text-[36px] font-semibold underline decoration-[#1051FF]'>Organize & prioritize all your work with our team</h1>
         <p className='text-[16px] font-medium'>Sort out the most important and urgent tasks & concentrate on them first  base your priorities</p>
         <p className='text-[14px] text-black'>Multi-voting helps a committee or group narrow down a large number of items into just a few items on which to focus & similar to multi-voting, this approach.</p>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

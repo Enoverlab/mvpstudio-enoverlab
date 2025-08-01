@@ -60,7 +60,7 @@ const Talentsreviews = () => {
             <img src='/reviewquotes.png' className='w-7 h-7 sm:w-15 sm:h-15'/>
             <h1 className='font-semibold text-lg'>{reviews[activeIndex].name}<br/><span className='text-base font-normal'>{reviews[activeIndex].role}</span><br/><span className='font-light text-xs'>{reviews[activeIndex].role2}</span></h1>
         </div>
-        <p className='text-sm md:text-center'>{reviews[activeIndex].text}</p>
+        <p className='text-sm md:text-center text-black'>{reviews[activeIndex].text}</p>
         <div className='flex flex-row gap-2 md:gap-2 md:justify-center md:items-center'>
             <button className="text-[10px] md:text-sm text-[#1051FF] bg-[#DFDFEE] rounded-lg  w-[50%] py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] inline-block">{reviews[activeIndex].hire}</button>
             <span className='lg:mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaInstagram/></span>

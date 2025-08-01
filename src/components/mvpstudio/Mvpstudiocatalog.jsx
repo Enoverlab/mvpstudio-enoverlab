@@ -57,7 +57,7 @@ const Mvpstudiocatalog = () => {
             filteredProjects.map((project, idx) => (
               <div
                 key={idx}
-                className={`rounded-[24px] p-6 md:p-10 flex flex-col md:flex-row items-center ${project.bg} shadow-md`}
+                className='rounded-[24px] p-6 md:p-10 flex flex-col md:flex-row items-center shadow-md bg-gradient-to-r from-[#f7eafd] to-[#f7fafd]'
               >
                 {/* Left */}
                 <div className="flex-1 flex flex-col justify-center items-start mb-6 md:mb-0 md:mr-8">

@@ -105,33 +105,42 @@ const TalentsForm = () => {
             {selectedRoles.length > 0
               ? selectedRoles.join(", ")
               : "Select role you want to hire"}
-                <span className="inline-block ml-2 w-3"><MdKeyboardArrowDown/></span>
+            <span className="inline-block ml-2 w-3"><MdKeyboardArrowDown/></span>
           </button>
           {dropdownOpen && (
-            <div className="absolute left-0 top-12 w-full bg-white rounded-xl shadow-lg z-10 p-4 flex flex-col gap-3">
-              <button
-                type="button"
-                className="absolute top-2 right-3 text-xl text-gray-400"
+            <>
+              {/* Backdrop Blur */}
+              <div
+                className="fixed inset-0 z-40 bg-black/10 backdrop-blur-[1px]"
                 onClick={() => setDropdownOpen(false)}
-                aria-label="Close"
-              >
-                <span className="inline-block mb-3 text-white bg-gray-700 w-5 h-5 rounded-full"><IoMdClose/></span>
-              </button>
-              {roles.map((role) => (
-                <label
-                  key={role}
-                  className="flex items-center justify-between py-2 px-2 cursor-pointer hover:bg-[#f3f6fd] rounded mt-2"
+                aria-label="Close dropdown"
+              />
+              {/* Dropdown */}
+              <div className="absolute left-0 top-3 w-[97%] ml-[1.5%] bg-white rounded-xl shadow-lg z-50 p-4 flex flex-col gap-3">
+                <button
+                  type="button"
+                  className="absolute top-2 right-3 text-xl text-gray-400"
+                  onClick={() => setDropdownOpen(false)}
+                  aria-label="Close"
                 >
-                  <span className="text-sm">{role}</span>
-                  <input
-                    type="checkbox"
-                    checked={selectedRoles.includes(role)}
-                    onChange={() => handleRoleToggle(role)}
-                    className="w-4 h-4"
-                  />
-                </label>
-              ))}
-            </div>
+                  <span className="inline-block mb-3 text-white bg-gray-700 w-5 h-5 rounded-full"><IoMdClose/></span>
+                </button>
+                {roles.map((role) => (
+                  <label
+                    key={role}
+                    className="flex items-center justify-between py-2 px-2 cursor-pointer hover:bg-[#f3f6fd] rounded mt-2"
+                  >
+                    <span className="text-sm">{role}</span>
+                    <input
+                      type="checkbox"
+                      checked={selectedRoles.includes(role)}
+                      onChange={() => handleRoleToggle(role)}
+                      className="w-4 h-4"
+                    />
+                  </label>
+                ))}
+              </div>
+            </>
           )}
         </div>
         <label className="text-sm font-medium mt-2">

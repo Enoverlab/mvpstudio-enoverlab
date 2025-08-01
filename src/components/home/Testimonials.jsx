@@ -1,12 +1,21 @@
 import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
 import { Navigation, Autoplay } from 'swiper/modules'
+import { motion } from 'framer-motion'
 
 const Testimonials = () => {
   return (
     <section className='mt-9 bg-[#F3F3FF]'>
-      <div className='flex flex-col gap-1 justify-center items-center px-10 text-center'>
+      <motion.div
+      initial={{ opacity:0, y:-40 }}
+    whileInView={{ opacity:1, y:0}}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      delay: 0.2,
+      damping: 20,
+    }}
+      className='flex flex-col gap-1 justify-center items-center px-10 text-center'>
         <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
           <img src='/testimonials.png' className='w-4 mr-2 h-[19px] leading-1.5' />
           Testimonials
@@ -17,7 +26,7 @@ const Testimonials = () => {
         <div className='text-[14px] font-normal text-[#595C63]'>
           We take pride in delivering exceptional solutions that delivers great <br className='max-md:hidden'/> results. But don’t just take our word for it.
         </div>
-      </div>
+      </motion.div>
 <div className='max-w-[90%] mx-auto px-4'>
       <Swiper
         slidesPerView={3}

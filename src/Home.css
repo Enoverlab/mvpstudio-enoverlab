@@ -214,6 +214,11 @@ border-radius: 16px;
   width: 100%;
 }
 
+#mySwipercoverflow{
+    width: 100%;
+    background-color: blue;
+}
+
 
 /* For testimonials section */
 .mySwiper2 {
@@ -243,8 +248,55 @@ height: 700px;
     height: 60px;
 }
 
+@media screen and (max-width: 768px) {
+    .item1 {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: max(calc(150px * 8), 100%);
+    animation-name: scrollleft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item11 {
+    animation-delay: calc(20s / 8 * (8 - 1) * -1);
+}
+
+.item12 {
+    animation-delay: calc(20s / 8 * (8 - 2) * -1);
+}
+
+.item13 {
+    animation-delay: calc(20s / 8 * (8 - 3) * -1);
+}
+
+.item14 {
+    animation-delay: calc(20s / 8 * (8 - 4) * -1);
+}
+
+.item15 {
+    animation-delay: calc(20s / 8 * (8 - 5) * -1);
+}
+
+.item16 {
+    animation-delay: calc(20s / 8 * (8 - 6) * -1);
+}
+
+.item17 {
+    animation-delay: calc(20s / 8 * (8 - 7) * -1);
+}
+
+.item18 {
+    animation-delay: calc(20s / 8 * (8 - 8) * -1);
+}
+}
+
 @media screen and (max-width: 450px) {
     #mySwiper{
         height: 150px;
     }
 }
+
+
