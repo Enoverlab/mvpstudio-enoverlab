@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 
 const Contact = () => {
   const [form, setForm] = useState({
-      name: "",
+      firstname: "",
+      lastname: "",
       company: "",
       phone: "",
       email: "",
@@ -36,9 +37,9 @@ const Contact = () => {
                     <label className="text-sm font-medium">First Name</label>
                 <input
                   type="text"
-                  name="name"
+                  name="firstname"
                   placeholder="Enter First Name"
-                  value={form.name}
+                  value={form.firstname}
                   onChange={handleInputChange}
                   className="border rounded-md px-3 py-2 text-sm outline-none"
                   required
@@ -46,9 +47,9 @@ const Contact = () => {
                     <label className="text-sm font-medium">Last Name</label>
                 <input
                   type="text"
-                  name="name"
+                  name="lastname"
                   placeholder="Enter Last Name"
-                  value={form.name}
+                  value={form.lastname}
                   onChange={handleInputChange}
                   className="border rounded-md px-3 py-2 text-sm outline-none"
                   required

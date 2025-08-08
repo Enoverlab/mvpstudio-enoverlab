@@ -56,11 +56,11 @@ const TalentsForm = () => {
         <p className="text-center text-sm text-[#595C63] mb-4">
           We are dedicated to making our process collaborative, we are inspired to tell our clients' stories in their own way, with our Unique touch.
         </p>
-        <label className="text-sm font-medium">Name</label>
+        <label className="text-sm font-medium">Full Name</label>
         <input
           type="text"
           name="name"
-          placeholder="Enter First Name"
+          placeholder="Enter Full Name"
           value={form.name}
           onChange={handleInputChange}
           className="border rounded-md px-3 py-2 text-sm outline-none"
