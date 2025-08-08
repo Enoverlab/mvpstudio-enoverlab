@@ -30,7 +30,7 @@ const Hero = () => {
           <Link to='/mvpstudio'><button className="px-3 w-[174px] h-[48px] py-2 border border-[#1051FF] rounded-lg text-[#121212] text-sm lg:font-medium bg-white hover:bg-[#1051FF] hover:text-white transition">
             <img src='/explore.png' className='inline-block mr-2 w-5 h-5'/>Explore an MVP
           </button></Link>
-          <Link to='/talent'><button className="px-3 w-[174px] h-[48px] py-2 rounded-lg bg-[#1051FF] text-white text-sm lg:font-medium hover:bg-[#1060ffc2] transition">
+          <Link to='/talents'><button className="px-3 w-[174px] h-[48px] py-2 rounded-lg bg-[#1051FF] text-white text-sm lg:font-medium hover:bg-[#1060ffc2] transition">
             <img src='/hire.png' className='inline-block mr-2 w-5 h-5'/>Hire Talents
           </button></Link>
         </div>
