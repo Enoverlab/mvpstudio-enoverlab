@@ -2,9 +2,13 @@ import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
 import { motion } from 'framer-motion'
+import { Element } from 'react-scroll'
 
 const Testimonials = () => {
   return (
+    <Element name='testimonials'
+    offset={-50}
+    scrolling='smooth'>
     <section className='mt-9 bg-[#F3F3FF]'>
       <motion.div
       initial={{ opacity:0, y:-40 }}
@@ -115,6 +119,7 @@ const Testimonials = () => {
       </Swiper>
       </div>
       </section>
+      </Element>
   )
 }
 

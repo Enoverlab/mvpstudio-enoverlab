@@ -3,6 +3,7 @@ import React from 'react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
   return (
     <motion.footer
@@ -36,27 +37,27 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Company</h3>
           <ul className="space-y-3 text-[#222]">
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">About</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">MVP Studio</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/about'>About</Link></li>
+            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/mvpstudio'>MVP Studio</Link></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Partners</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Contact Us</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/contact'>Contact Us</Link></li>
           </ul>
         </div>
         {/* Explore */}
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Explore</h3>
           <ul className="space-y-3 text-[#222] ">
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Browse MVPs</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/mvpstudio'>Browse MVPs</Link></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Industries</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Case Studies</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Testimonials</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/testimonials'>Testimonials</Link></li>
           </ul>
         </div>
         {/* Support */}
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Support</h3>
           <ul className="space-y-3 text-[#222] ">
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">FAQ</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='faq'>FAQ</Link></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Help Center</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF] whitespace-pre'><a href="#">Submit Your MVP</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Terms of Use</a></li>
