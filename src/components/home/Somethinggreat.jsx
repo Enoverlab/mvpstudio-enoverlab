@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Somethinggreat = () => {
   return (
     <>
-    <section className='p-5 md:p-10'>
+    <section className='p-5 max-md:pt-20 max-md:pb-20 md:p-10'>
         <motion.div
         initial={{ opacity:0, scale:0.7 }}
     whileInView={{ opacity:1, scale:1.0}}

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Usspecial = () => {
   return (
     <>
-    <section className='mt-5'>
+    <section className='mt-5 mb-20'>
         <motion.div
         initial={{ opacity:0, x:-40 }}
     whileInView={{ opacity:1, x:0}}

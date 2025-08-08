@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Empower = () => {
   return (
-    <section className='w-full bg-white'>
+    <section className='w-full bg-white max-md:pt-5'>
         <div className='w-full flex flex-col md:flex-row p-4 md:py-20 md:px-10 md:gap-15'>
             <motion.div
             initial={{ opacity:0, x:-40 }}

@@ -12,7 +12,7 @@ const Projectcount = ({count}) => {
     <section>
         <div 
         ref={ref}
-        className='w-full flex flex-wrap max-md:hidden justify-between p-5 text-center px-15 gap-4'>
+        className='w-full flex flex-wrap max-md:hidden justify-between p-5 text-center px-15 gap-4 mb-20'>
             <div className='flex flex-col'>
                 <p className='text-xl  lg:text-2xl'> {inView ? (
                     <>

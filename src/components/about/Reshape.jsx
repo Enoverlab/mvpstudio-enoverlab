@@ -4,11 +4,11 @@ import React from 'react'
 const Reshape = () => {
   return (
     <>
-    <section className='bg-[#F3F3FF] p-5'>
+    <section className='bg-[#F3F3FF] p-5 max-md:pt-5'>
         <div className='flex flex-col gap-1 justify-center items-center  text-center mt-5 md:mt-15'>
         <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
           <img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5' />
-          Our Values
+          Our Vision
         </div>
         <div className='text-[24px] md:text-[36px] text-[#111216] text-center md:font-medium'>
           Reshaping the Future of Startup <br className='max-md:hidden'/>Innovation

@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Heromobile = () => {
   return (
     <>
-    <section>
+    <section className='mb-20'>
         <div className='flex flex-col'>
             <motion.div
             initial={{ opacity:0, scale:0.7 }}

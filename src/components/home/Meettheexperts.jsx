@@ -105,7 +105,7 @@ const Meettheexperts = () => {
         }, [isVisible]);
 
   return (
-    <section ref={sectionRef} className='bg-[#FFFFFF] mt-5 py-8'>
+    <section ref={sectionRef} className='bg-[#FFFFFF] pt-20 py-8'>
       <motion.div
       initial={{ opacity:0, y:40 }}
     whileInView={{ opacity:1, y:0}}
