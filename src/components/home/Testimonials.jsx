@@ -2,12 +2,9 @@ import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 
 const Testimonials = () => {
   return (
-    <Link to='testimonials'
-    offset={-50}>
     <section className='mt-9 bg-[#F3F3FF]'>
       <motion.div
       initial={{ opacity:0, y:-40 }}
@@ -118,7 +115,6 @@ const Testimonials = () => {
       </Swiper>
       </div>
       </section>
-      </Link>
   )
 }
 

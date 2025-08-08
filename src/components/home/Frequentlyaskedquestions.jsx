@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { questions } from '../data'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 
 const Frequentlyaskedquestions = () => {
     const [openIndex, setOpenIndex] = useState(null)
@@ -11,8 +10,6 @@ const Frequentlyaskedquestions = () => {
   }
   return (
     <>
-    <Link name='faq'
-    offset={-50}>
     <section className='w-full bg-white'>
     <div className='w-full flex flex-col md:flex-row'>
         <motion.div
@@ -65,7 +62,6 @@ const Frequentlyaskedquestions = () => {
             </motion.div>
     </div>
     </section>
-    </Link>
     </>
   )
 }
