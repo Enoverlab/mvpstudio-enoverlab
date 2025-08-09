@@ -50,14 +50,14 @@ const Footer = () => {
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/mvpstudio'>Browse MVPs</Link></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Industries</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Case Studies</a></li>
-            <HashLink to='/home#testimonials'><li className='text-[11px] md:text-base hover:text-[#1051FF]'>Testimonials</li></HashLink>
+            <HashLink to='/#testimonials'><li className='text-[11px] md:text-base hover:text-[#1051FF]'>Testimonials</li></HashLink>
           </ul>
         </div>
         {/* Support */}
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Support</h3>
           <ul className="space-y-3 text-[#222] ">
-            <HashLink to='/home#faq'><li className='text-[11px] md:text-base hover:text-[#1051FF]'>FAQ</li></HashLink>
+            <HashLink to='/#faq'><li className='text-[11px] md:text-base hover:text-[#1051FF]'>FAQ</li></HashLink>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Help Center</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF] whitespace-pre'><a href="#">Submit Your MVP</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Terms of Use</a></li>

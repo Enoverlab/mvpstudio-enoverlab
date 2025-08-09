@@ -54,7 +54,7 @@ const Navbar = () => {
       <div
       className="flex flex-row items-center justify-between"
       >
-      <div className='inline-block'><Link to="/home"><img src="/logo.png" alt="" className='w-[25px] h-[28.19px] justify-start items-start inline-block ml-[10px]'/><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px]  inline-block'/></Link></div>
+      <div className='inline-block'><Link to="/"><img src="/logo.png" alt="" className='w-[25px] h-[28.19px] justify-start items-start inline-block ml-[10px]'/><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px]  inline-block'/></Link></div>
         <ul
                    ref={menuRef} 
                    className={`flex max-lg:flex-col items-center absolute top-15 lg:static w-[60%] text-center gap-7 lg:gap-9 herobg min-lg:bg-none max-lg:text-black font-medium lg:w-auto lg:bg-transparent lg:flex-row z-9999 ${
@@ -62,7 +62,7 @@ const Navbar = () => {
                    }`}
                  >
                    <li className={`block ${isOpen ? "pt-10" : "max-lg:hidden"} pt-2 justify-between 
-                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/home">Home</Link></li>
+                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/">Home</Link></li>
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/about">About Us</Link>
                  {/* Dropdown Button */}
