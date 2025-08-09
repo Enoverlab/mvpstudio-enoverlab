@@ -51,7 +51,7 @@ const Testimonials = () => {
         }}
         className="mySwiper2"
       >
-        <SwiperSlide ><div className='bg-white flex flex-col p-5'>
+        <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl'>
           <p className='text-sm md:text-base mb-7'>"I really like the system at this management, I love recommending this software from you guys"</p>
           <div className='w-full flex flex-row'>
             <div><img src='/ashley.png' className='object-contain w-15 h-15'/></div>
@@ -61,27 +61,7 @@ const Testimonials = () => {
                 <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
               </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
 
-              <SwiperSlide ><div className='bg-white flex flex-col p-5'>
-          <p className='text-sm md:text-base mb-7'>"“We alighn our succeess with the success of our customers and offer transcending our software”.</p>
-          <div className='w-full flex flex-row'>
-            <div><img src='/jackline.png' className='object-contain w-15 h-15'/></div>
-            <div className='flex flex-col'>
-            
-                <p className='text-sm ml-2 mt-3'>Jackline Fare</p>
-                <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
-              </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
-
-              <SwiperSlide ><div className='bg-white flex flex-col p-5'>
-          <p className='text-sm md:text-base mb-7'>"I really like the system at this management, I love recommending this software from you guys"</p>
-          <div className='w-full flex flex-row'>
-            <div><img src='/ashley.png' className='object-contain w-15 h-15'/></div>
-            <div className='flex flex-col'>
-            
-                <p className='text-sm ml-2 mt-3'>Ashley Cooper</p>
-                <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
-              </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
-
-              <SwiperSlide ><div className='bg-white flex flex-col p-5'>
+              <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl'>
           <p className='text-sm md:text-base mb-7'>“We alighn our succeess with the success of our customers and offer transcending our software”.</p>
           <div className='w-full flex flex-row'>
             <div><img src='/jackline.png' className='object-contain w-15 h-15'/></div>
@@ -91,7 +71,7 @@ const Testimonials = () => {
                 <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
               </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
 
-              <SwiperSlide ><div className='bg-white flex flex-col p-5'>
+              <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl'>
           <p className='text-sm md:text-base mb-7'>"I really like the system at this management, I love recommending this software from you guys"</p>
           <div className='w-full flex flex-row'>
             <div><img src='/ashley.png' className='object-contain w-15 h-15'/></div>
@@ -101,7 +81,27 @@ const Testimonials = () => {
                 <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
               </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
 
-              <SwiperSlide ><div className='bg-white flex flex-col p-5'>
+              <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl'>
+          <p className='text-sm md:text-base mb-7'>“We alighn our succeess with the success of our customers and offer transcending our software”.</p>
+          <div className='w-full flex flex-row'>
+            <div><img src='/jackline.png' className='object-contain w-15 h-15'/></div>
+            <div className='flex flex-col'>
+            
+                <p className='text-sm ml-2 mt-3'>Jackline Fare</p>
+                <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
+              </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
+
+              <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl'>
+          <p className='text-sm md:text-base mb-7'>"I really like the system at this management, I love recommending this software from you guys"</p>
+          <div className='w-full flex flex-row'>
+            <div><img src='/ashley.png' className='object-contain w-15 h-15'/></div>
+            <div className='flex flex-col'>
+            
+                <p className='text-sm ml-2 mt-3'>Ashley Cooper</p>
+                <div className="text-[#FF9800] text-lg ml-2">★★★★</div>
+              </div><div><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4 ml-13 lg:ml-16'/></div></div></div></SwiperSlide>
+
+              <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl'>
           <p className='text-sm md:text-base mb-7'>"I really like the system at this management, I love recommending this software from you guys"</p>
           <div className='w-full flex flex-row'>
             <div><img src='/jackline.png' className='object-contain w-15 h-15'/></div>
