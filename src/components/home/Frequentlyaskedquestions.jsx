@@ -10,7 +10,7 @@ const Frequentlyaskedquestions = () => {
   }
   return (
     <>
-    <section className='w-full bg-white'>
+    <section className='w-full bg-white' id='faq'>
     <div className='w-full flex flex-col md:flex-row'>
         <motion.div
         initial={{ opacity:0, x:-40 }}

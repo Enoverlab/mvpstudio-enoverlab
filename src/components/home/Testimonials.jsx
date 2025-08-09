@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const Testimonials = () => {
   return (
-    <section className='mt-9 bg-[#F3F3FF]'>
+    <section className='mt-9 bg-[#F3F3FF]' id='testimonials'>
       <motion.div
       initial={{ opacity:0, y:-40 }}
     whileInView={{ opacity:1, y:0}}

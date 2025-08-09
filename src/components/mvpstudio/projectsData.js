@@ -1,7 +1,7 @@
 const projectsData = {
     "All Projects": [
         {
-          category: "Agric tech",
+          category: "AgricTech",
           title: "Agro Tech a web base Agro platform ready for customization",
           desc: "Designed and developed by our professional team with a responsive editor that optimizes designs for every screen size.",
           img: "/agrotech.png",
@@ -17,7 +17,7 @@ const projectsData = {
           explorelink: "https://mvpstudio.com/agrotech",
         },
         {
-          category: "Agric tech",
+          category: "AgricTech",
           title: "Agro Tech a web base Agro platform ready for customization",
           desc: "Designed and developed by our professional team with a responsive editor that optimizes designs for every screen size.",
           img: "/agrotech1.png",
@@ -46,8 +46,8 @@ const projectsData = {
           explorelink: "https://mvpstudio.com/agrotech",
         },
         {
-          category: "Healthcare",
-          title: "Health care web base healthcare platform ready for customization",
+          category: "HealthTech",
+          title: "HealthTech web base healthcare platform ready for customization",
           desc: "Designed and developed by our professional team with a responsive editor that optimizes designs for every screen size.",
           img: "/healthcare1.png",
           experts: [
@@ -61,7 +61,7 @@ const projectsData = {
       ],
       "Web App": [
         {
-          category: "Agric tech",
+          category: "AgricTech",
           title: "Agro Tech a web base Agro platform ready for customization",
           desc: "Designed and developed by our professional team with a responsive editor that optimizes designs for every screen size.",
           img: "/agrotech.png",
@@ -95,11 +95,11 @@ const projectsData = {
 export default projectsData;
 
 export const categories = [
-  "Agric tech",
-  "Healthcare",
-  "Fintech",
+  "AgricTech",
+  "HealthTech",
+  "FinTech",
   "EdTech",
-  "Logistics",
+  "E-Commerce",
   "AI",
   "Hospitality",
   "Events",

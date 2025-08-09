@@ -1,3 +1,4 @@
+import {  useLocation } from 'react-router-dom';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import projectsData from './projectsData'; 
@@ -6,7 +7,12 @@ import { categories, tabs } from './projectsData';
 
 const Mvpstudiocatalog = () => {
   const [activeTab, setActiveTab] = useState("All Projects");
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  //to get the link destination from homepage
+  const location = useLocation();
+const params = new URLSearchParams(location.search);
+const initialCategory = params.get('category') || categories[0];
+const [activeCategory, setActiveCategory] = useState(initialCategory);
+//
   const navigate = useNavigate(); // Add this line
 
   // Filter projects by category for the active tab

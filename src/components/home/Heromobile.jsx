@@ -21,7 +21,7 @@ const Heromobile = () => {
             className='w-full flex flex-col justify-center items-center p-5 sm:p-10 mt-20 gap-3'>
                   <div className="max-sm:mb-4  border-1 rounded-2xl px-5 border-gray-300">
           <span className="text-[#FF9800] text-lg">★★★★</span>
-          <span className="text-[#121212] text-xs font-medium">
+          <span className="text-[#121212] text-[10px] font-medium inline-flex">
             4.9/5 (Based on 10000+ happy users)
           </span>
         </div>
