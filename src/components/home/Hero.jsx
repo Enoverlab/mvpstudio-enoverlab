@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
-    <section className="w-full h-screen flex flex-col herobg relative overflow-hidden z-1">
+    <section className="w-full flex flex-col herobg relative overflow-hidden z-1">
       <div className='hidden lg:block absolute inset-0 z-10'>
           <div className="absolute  top-60 -left-1/4 w-2/3 h-[250px] bg-white rounded-full blur-3xl opacity-90"></div>
         </div>
