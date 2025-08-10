@@ -3,13 +3,13 @@ import { MdMenu, MdMenuOpen } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import { IoIosArrowDown } from 'react-icons/io';
-import Aboutdropdown from './about/Aboutdropdown';
 
 
 const Navbarwhite = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
  const [isOpen, setIsOpen] = useState(false);
          const menuRef = useRef(null);
+         const dropRef = useRef(null);
          const [showNavbar, setShowNavbar] = useState(true);
    const [lastScrollY, setLastScrollY] = useState(0);
  
@@ -39,9 +39,18 @@ const Navbarwhite = () => {
        };
    
        document.addEventListener('mousedown', handleClickOutside);
-
        return () => document.removeEventListener('mousedown', handleClickOutside);
      }, []);
+
+     useEffect(() => {
+           const handleClickOutside = (event) => {
+             if (dropRef.current && !dropRef.current.contains(event.target)) {
+               setDropdownOpen(false);
+             }
+           };
+           document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
    return (
      <motion.nav
      initial={{ y: -100 }}
@@ -62,20 +71,26 @@ const Navbarwhite = () => {
            <li className={`block ${isOpen ? "pt-10" : "max-lg:hidden"} pt-2 justify-between 
                   text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/">Home</Link></li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
-                 text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/about">About Us</Link>
-         {/* Dropdown Button */}
-           <div className='hidden lg:inline-block ml-1'>
-         <button
-           className="cursor-pointer lg:block"
-           onClick={() => setDropdownOpen((open) => !open)}
-         >
-           {dropdownOpen ? <IoIosArrowDown  /> : <IoIosArrowDown  />}
-         </button></div></li> 
-
-         {/* Dropdown Section */}
-         {dropdownOpen && (
-           <Aboutdropdown/>
-         )}
+             text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} 
+             ref={dropRef}
+           >
+             <Link to="/about" className='max-lg:hover:text-cyan-200'>About Us</Link>
+             {/* Dropdown Button */}
+             <div className='inline-block ml-1'>
+               <button
+                 className="cursor-pointer lg:block relative"
+                 onClick={() => setDropdownOpen((open) => !open)}
+               >
+                 <IoIosArrowDown />
+               </button>
+             </div>
+             {/* Dropdown Section */}
+             {dropdownOpen && (
+               <ul className='lg:absolute lg:top-14 lg:left-[40%] bg-white shadow-lg rounded-lg p-4 z-50 duration-500 hover:text-indigo-900 text-sm text-black'>
+                 <Link to='/services' className='text-black hover:text-indigo-900'><li>Services</li></Link>
+               </ul>
+             )}
+           </li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/talents">Talents</Link></li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 

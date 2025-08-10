@@ -14,7 +14,7 @@ const Somethinggreat = () => {
       delay: 0.2,
       damping: 20,
     }}
-        className='relative w-full bg-[#1051FF] h-[270px] md:h-[470px] rounded-[40px]'>
+        className='relative w-full bg-[#1051FF] h-[270px] md:h-[470px] rounded-[20px]'>
             <span className='max-md:hidden'><img className='absolute bottom-0 left-[226px]' src='/elipsesmall.png'/>
             <img className='absolute bottom-0 right-[41px]' src='/elipselarge.png'/>
             <img className='absolute top-0 right-[225px] rotate-180' src='/elipsesmall.png'/>

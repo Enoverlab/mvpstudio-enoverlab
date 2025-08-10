@@ -144,7 +144,7 @@ const TalentsForm = () => {
           )}
         </div>
         <label className="text-sm font-medium mt-2">
-          What are you looking to build with Enoverlab?
+          Additional Comments
         </label>
         <textarea
           name="message"

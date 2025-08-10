@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
-import Heromarquee from './Heromarquee';
 import { motion } from 'framer-motion';
+import Heromarqueemobile from './Heromarqueemobile';
 
 const Heromobile = () => {
   return (
@@ -66,7 +66,7 @@ className='mySwiper swiper-slide'
         <img src="/secondverticalimage3.png" className='rounded-3xl w-[200px] sm:w-[300px] h-[240px] sm:h-[300px]'/>
     </SwiperSlide>
 </Swiper>
-                        <Heromarquee/>
+                        <Heromarqueemobile/>
         </div>
     </section>
     </>

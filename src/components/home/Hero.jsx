@@ -40,7 +40,7 @@ const Hero = () => {
    <Heromarqueevertical/>
     </div>
     </div>
-    <div className='flex'><Heromarquee/></div>
+    <div className='flex pb-10'><Heromarquee/></div>
       </section>
     
     </>

@@ -12,34 +12,34 @@ const Projectcount = ({count}) => {
     <section>
         <div 
         ref={ref}
-        className='w-full flex flex-wrap max-md:hidden justify-between p-5 text-center px-15 gap-4 mb-20'>
+        className='w-full flex flex-wrap max-md:hidden justify-between p-5 text-center px-15 lg:px-40 gap-4 mb-20'>
             <div className='flex flex-col'>
-                <p className='text-xl  lg:text-2xl'> {inView ? (
+                <p className='text-xl font-medium'> {inView ? (
                     <>
                     <CountUp end={50} duration={3} separator=',' /><span>K</span><span>+</span>
                     </>) : (count)}</p>
-                <p className='text-[10px] lg:text-lg leading-7 xl:leading-10 '>MVP Built</p>
+                <p className='text-[10px] lg:text-base leading-7 '>MVP Built</p>
             </div>
             <div className='flex flex-col'>
-                <p className='text-xl  lg:text-2xl'> {inView ? (
+                <p className='text-xl font-medium'> {inView ? (
                     <>
                     <CountUp end={200} duration={3} separator=',' /><span>K</span><span>+</span>
                     </>) : (count)}</p>
-                <p className='text-[10px] lg:text-lg leading-7 xl:leading-10'>Trained Professionals</p>
+                <p className='text-[10px] lg:text-base leading-7'>Trained Professionals</p>
             </div>
             <div className='flex flex-col'>
-                <p className='text-xl  lg:text-2xl'> {inView ? (
+                <p className='text-xl font-medium'> {inView ? (
                     <>
                     <CountUp end={30} duration={3} separator=',' /><span>K</span><span>+</span>
                     </>) : (count)}</p>
-                <p className='text-[10px] lg:text-lg leading-7 xl:leading-10'>Mentors</p>
+                <p className='text-[10px] lg:text-base leading-7'>Mentors</p>
             </div>
             <div className='flex flex-col'>
-                <p className='text-xl  lg:text-2xl'> {inView ? (
+                <p className='text-xl font-medium'> {inView ? (
                     <>
                     <CountUp end={92} duration={3} separator=',' /><span>K</span>
                     </>) : (count)}</p>
-                <p className='text-[10px] lg:text-lg leading-7 xl:leading-10'>Social profiles</p>
+                <p className='text-[10px] lg:text-base leading-7'>Social profiles</p>
             </div>
         </div>
     </section>

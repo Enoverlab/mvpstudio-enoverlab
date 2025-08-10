@@ -15,8 +15,8 @@ const Footer = () => {
       delay: 0.3,
       damping: 20,
     }}
-    className='w-full lg:w-[95%] xl:w-[90%] mx-auto px-1 sm:px-5 max-md:mb-10'>
-      <section className="bg-[#fff] rounded-[40px] p-4 md:m-10 lg:p-15 shadow-xl">
+    className='w-full lg:w-[95%] xl:w-[90%] mx-auto px-1 sm:px-5 pb-10'>
+      <section className="bg-[#fff] rounded-[20px] p-4 md:pb-10 lg:p-15">
       {/* CTA Banner */}
       <div className="mx-auto mb-12">
         <div className="relative bg-[#1051FF] rounded-xl flex flex-row items-center justify-between px-4 md:px-16 py-4 sm:py-6 lg:py-10 overflow-hidden">
@@ -57,7 +57,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Support</h3>
           <ul className="space-y-3 text-[#222] ">
-            <HashLink to='/#faq'><li className='text-[11px] md:text-base hover:text-[#1051FF]'>FAQ</li></HashLink>
+            <HashLink to='/#faq'><li className='text-[11px] md:text-base hover:text-[#1051FF] pb-3'>FAQ</li></HashLink>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Help Center</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF] whitespace-pre'><a href="#">Submit Your MVP</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Terms of Use</a></li>

@@ -2,8 +2,17 @@
     background: var(--hero-gradient);
 }
 .wrapper1{
-   width: 95%;
+   width: 80%;
    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+    
+}
+
+.wrapper1mobile{
+   width: 95%;
     margin-inline: auto;
     position: relative;
     height: 40px;
@@ -25,10 +34,21 @@
 }
 
 .item1 {
-    width: 150px;
+    width: 80px;
     height: 50px;
     position: absolute;
-    left: max(calc(150px * 8), 100%);
+    left: max(calc(80px * 10), 100%);
+    animation-name: scrollleft;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1mobile {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: max(calc(100px * 8), 100%);
     animation-name: scrollleft;
     animation-duration: 80s;
     animation-timing-function: linear;
@@ -36,36 +56,46 @@
 }
 
 .item11 {
-    animation-delay: calc(80s / 8 * (8 - 1) * -1);
+    animation-delay: calc(80s / 10 * (10 - 1) * -1);
 }
 
 .item12 {
-    animation-delay: calc(80s / 8 * (8 - 2) * -1);
+    animation-delay: calc(80s / 10 * (10 - 2) * -1);
 }
 
 .item13 {
-    animation-delay: calc(80s / 8 * (8 - 3) * -1);
+    animation-delay: calc(80s / 10 * (10 - 3) * -1);
 }
 
 .item14 {
-    animation-delay: calc(80s / 8 * (8 - 4) * -1);
+    animation-delay: calc(80s / 10 * (10 - 4) * -1);
 }
 
 .item15 {
-    animation-delay: calc(80s / 8 * (8 - 5) * -1);
+    animation-delay: calc(80s / 10 * (10 - 5) * -1);
 }
 
 .item16 {
-    animation-delay: calc(80s / 8 * (8 - 6) * -1);
+    animation-delay: calc(80s / 10 * (10 - 6) * -1);
 }
 
 .item17 {
-    animation-delay: calc(80s / 8 * (8 - 7) * -1);
+    animation-delay: calc(80s / 10 * (10 - 7) * -1);
 }
 
 .item18 {
-    animation-delay: calc(80s / 8 * (8 - 8) * -1);
+    animation-delay: calc(80s / 10 * (10 - 8) * -1);
 }
+
+.item19 {
+    animation-delay: calc(80s / 10 * (10 - 9) * -1);
+}
+
+.item200 {
+    animation-delay: calc(80s / 10 * (10 - 10) * -1);
+}
+
+
 
 /* First vertical marquee */
 .wrapper2{
@@ -248,7 +278,7 @@ height: 700px;
     height: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .item1 {
     width: 150px;
     height: 50px;

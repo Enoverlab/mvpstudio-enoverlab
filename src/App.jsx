@@ -9,6 +9,7 @@ import ScrollToTop from './ScrollToTop'
 import Mvpstudio from './components/Mvpstudio'
 import TalentsForm from './components/talents/Talentsform'
 import ProjectDetails from './components/mvpstudio/ProjectDetails'
+import Services from './Services'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/talents' element={ <Talents/> }/>
       <Route path='/contact' element={ <Contact/> }/>
       <Route path='/mvpstudio' element={ <Mvpstudio/> }/>
+      <Route path='/services' element={ <Services/> }/>
       <Route path='/talentsform' element={<TalentsForm/>}/>
       <Route path='/project/:tab/:category/:idx' element={<ProjectDetails/>}/>
     </Routes>

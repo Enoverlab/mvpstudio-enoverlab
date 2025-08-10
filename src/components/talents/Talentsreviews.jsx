@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { reviews } from '../data'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
   
 
@@ -62,10 +63,10 @@ const Talentsreviews = () => {
         </div>
         <p className='text-sm md:text-center text-black'>{reviews[activeIndex].text}</p>
         <div className='flex flex-row gap-2 md:gap-2 md:justify-center md:items-center'>
-            <button className="text-[10px] md:text-sm text-[#1051FF] bg-[#DFDFEE] rounded-lg  w-[50%] py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] inline-block">{reviews[activeIndex].hire}</button>
-            <span className='lg:mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaInstagram/></span>
-            <span className='lg:mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaFacebook/></span>
-            <span className='lg:mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaWhatsapp/></span>
+            <Link to='/talentsform'><span className="text-[10px] md:text-sm text-[#1051FF] bg-[#DFDFEE] rounded-lg  w-[200px] py-1 md:py-1 lg:py-2 hover:text-white text-center hover:bg-[#1051FF] inline-block">{reviews[activeIndex].hire}</span></Link>
+            <span className='mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaInstagram/></span>
+            <span className='mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaFacebook/></span>
+            <span className='mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><FaWhatsapp/></span>
         </div>
       </div>
     </section>

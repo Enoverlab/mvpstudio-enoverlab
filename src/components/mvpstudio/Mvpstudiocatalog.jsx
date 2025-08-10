@@ -21,7 +21,7 @@ const [activeCategory, setActiveCategory] = useState(initialCategory);
   );
 
   return (
-    <section className="w-full min-h-screen bg-white px-2 py-8 flex flex-col items-center">
+    <section className="w-full min-h-screen px-2 pt-8 flex flex-col items-center">
       {/* Tabs */}
       <div className="flex gap-2 mb-4 bg-[#f7fafd] px-5 py-2 rounded-2xl">
         {tabs.map((tab) => (
@@ -63,7 +63,7 @@ const [activeCategory, setActiveCategory] = useState(initialCategory);
             filteredProjects.map((project, idx) => (
               <div
                 key={idx}
-                className='rounded-[24px] p-6 md:p-10 flex flex-col md:flex-row items-center shadow-md bg-gradient-to-r from-[#f7eafd] to-[#f7fafd]'
+                className='rounded-[24px] p-6 md:p-10 flex flex-col md:flex-row items-center shadow-md bg-gradient-to-r from-[#FFEDEE] to-[#F2EAFF]'
               >
                 {/* Left */}
                 <div className="flex-1 flex flex-col justify-center items-start mb-6 md:mb-0 md:mr-8">
