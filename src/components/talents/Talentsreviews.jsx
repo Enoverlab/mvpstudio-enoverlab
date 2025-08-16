@@ -42,13 +42,14 @@ const Talentsreviews = () => {
   };
   return (
     <section className='relative md:overflow-hidden'>
-                <img src="/talentsbg.png" className='w-full h-auto object-cover absolute top-20 xl:-top-5 left-0 z-1' />
-                <img src="/talentsbg.png" className='sm:hidden w-full h-auto object-cover absolute top-80 left-0 z-1' />
+                <img src="/talentsbg.png" className='hidden sm:block w-full h-auto object-cover absolute top-20 xl:-top-5 left-0 z-1' />
+                <img src="/talentsbg.png" className='sm:hidden w-full h-auto object-cover absolute top-0 left-0 z-1' />
+                <img src="/talentsbg.png" className='sm:hidden w-full h-auto object-cover absolute top-50 left-0 z-1' />
 
 
-      <div className='md:px-25 lg:px-30 min-[1366px]:mx-10 md:overflow-hidden relative'>
+      <div className='md:px-25 lg:px-30 min-[1366px]:mx-10 relative'>
       <div
-      className="flex max-md:flex-wrap md:flex-row md:flex-1/3 lg:flex-1/4 xl:flex-1/5 md:overflow-x-auto justify-center items-center gap-4 md:gap-5 lg:gap-6 xl:gap-10 mt-16 px-5 md:py-5 md:justify-around cursor-grab bg-transparent border-none md:w-full hide-scrollbar">
+      className="flex max-lg:flex-wrap lg:flex-row lg:overflow-x-auto justify-center gap-4 md:gap-5 lg:gap-6 xl:gap-10 mt-16 px-5 md:py-5 md:justify-around cursor-grab bg-transparent border-none lg:w-full hide-scrollbar">
         {reviews.map((review, idx) => (
           <div
             key={idx}
@@ -58,13 +59,13 @@ const Talentsreviews = () => {
             `}
             tabIndex={0}
           >
-            <img src={review.img} className='hidden object-cover w-20 h-30 rounded-full z-10 md:flex md:w-40  md:h-60 md:flex-shrink-0'/>
-            <img src={review.imgmobile} className='object-cover w-20 h-30 rounded-full z-10 flex md:hidden md:w-40  md:h-60 md:flex-shrink-0'/>
+            <img src={review.img} className='hidden object-cover w-20 h-30 rounded-full z-10 lg:flex lg:w-40  lg:h-60 lg:flex-shrink-0'/>
+            <img src={review.imgmobile} className='object-cover w-20 h-30 rounded-full z-10 flex lg:hidden lg:w-40  lg:h-60 lg:flex-shrink-0'/>
           </div>
         ))}
       </div>
 
-      <div className='hidden absolute bottom-0 right-0 w-20 h-20 text-4xl animate-bounce md:flex flex-col'>
+      <div className='hidden absolute bottom-0 right-0 w-20 h-20 text-4xl animate-bounce lg:flex flex-col'>
         <MdDoubleArrow/>
         <p className='italic text-sm'>Scroll...</p>
         </div>
