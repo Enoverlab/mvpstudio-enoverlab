@@ -2,39 +2,39 @@ import React, { useRef, useEffect, useState } from 'react'
 
 const experts = [
   {
-    name: "Thomas Smart",
-    role: "Product designers",
-    img: "/expert1.png",
-    imgbanner: "/penmobile.png",
-    style: "top-10 left-1/5"
+    name: "Sarah Ibeji",
+    role: "Head of Product",
+    img: "/talentonemobile.jpg",
+    imgbanner: "/flagmobile.png",
+    style: "top-10 left-1/7 min-[460px]:left-1/4"
   },
   {
-    name: "Sarah Paul",
+    name: "Okpanachi Isah",
     role: "Product Manager",
-    img: "/expert2.png",
+    img: "/talenttwomobile.jpg",
     imgbanner: "/penmobile.png",
     style: "top-15 left-7/12"
   },
   {
-    name: "Joy Samuel",
+    name: "John Esan",
     role: "Product manager",
-    img: "/expert3.png",
-    imgbanner: "/flagmobile.png",
+    img: "/talentsixmobile.jpg",
+    imgbanner: "/penmobile.png",
     style: "bottom-16 left-7/12"
   },
   {
-    name: "Bright Williams",
-    role: "Developer",
-    img: "/expert4.png",
+    name: "Osinachi Ekwueme",
+    role: "Web Developer",
+    img: "/talentfournew1.jpg",
     imgbanner: "/chatmobile.png",
-    style: "bottom-8 right-7/12 "
+    style: "bottom-8 min-[480px]:bottom-14 right-7/12 "
   },
   {
-    name: "Promise John",
+    name: "Beatrice Olajide",
     role: "Product manager",
-    img: "/expert5.png",
+    img: "/talentthreemobile.jpg",
     imgbanner: "/chatmobile.png",
-    style: "top-25 right-7/11"
+    style: "top-25 right-7/11 min-[480px]:right-61/100"
   }
 ];
 
@@ -152,9 +152,9 @@ const Meettheexpertsmobile = () => {
         {experts.map((expert, idx) => {
           // For left-side cards, place info on the left, image on the right
           const isLeft =
-            expert.name === "Thomas Smart" ||
-            expert.name === "Promise John" ||
-            expert.name === "Bright Williams";
+            expert.name === "Sarah Ibeji" ||
+            expert.name === "Beatrice Olajide" ||
+            expert.name === "Osinachi Ekwueme";
           return (
             <div
               key={expert.name}
@@ -169,7 +169,7 @@ const Meettheexpertsmobile = () => {
                 <img src={expert.imgbanner} className='h-1/2'/>
                 <div className='flex flex-col'>
                 <div className="font-semibold text-[#111216] text-[8px]">{expert.name}</div>
-                <div className="text-[8px] text-[#595C63]">{expert.role}</div>
+                <div className="text-[8px] text-[#595C63] whitespace-pre">{expert.role}</div>
                 </div>
                 
               </div>

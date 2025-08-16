@@ -24,7 +24,7 @@
 
     --talents-gradient: linear-gradient(
     250deg,
-     #ffffff 20%,
+     #eee4e4 20%,
      #51dee5 50%,
      #b7b2ce 70%
     );
@@ -36,10 +36,17 @@
      #ccc9d6 50%
     );
 
+    --mvpuploadgradient: linear-gradient(
+        250deg,
+        #51dee5 30%,
+        #ccc9d6 50%
+    );
+
 
     --swiper-button-next: url('/arrowright.svg');
       
 }
+
 body{
     font-family: "Inter", sans-serif;
     
@@ -91,6 +98,19 @@ body{
 
 .talentsgradient{
     background: var(--talents-gradient);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.mvpuploadgradient{
+    background: var(--mvpuploadgradient);
 }
 
 @media screen and (max-width: 768px) {

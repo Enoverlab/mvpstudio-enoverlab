@@ -1,45 +1,46 @@
 import { motion } from 'framer-motion';
 import React, { useRef, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const experts = [
   {
-    name: "Thomas Smart",
-    role: "Product designers",
-    img: "/expert1.png",
-    imgbanner: "/penmobile.png",
-    hire: "Hire Thomas",
+    name: "Sarah Ibeji",
+    role: "Head of Product",
+    img: "/talentonemobile.jpg",
+    imgbanner: "/flagmobile.png",
+    hire: "Hire Sarah",
     style: "top-2 left-1/4"
   },
   {
-    name: "Sarah Paul",
+    name: "Okpanachi Isah",
     role: "Product Manager",
-    img: "/expert2.png",
+    img: "/talenttwomobile.jpg",
     imgbanner: "/penmobile.png",
-    hire: "Hire Sarah",
+    hire: "Hire Okpanachi",
     style: "top-20 left-7/11"
   },
   {
-    name: "Joy Samuel",
+    name: "John Esan",
     role: "Product manager",
-    img: "/expert3.png",
-    imgbanner: "/flagmobile.png",
-    hire: "Hire Joy",
+    img: "/talentsixmobile.jpg",
+    imgbanner: "/penmobile.png",
+    hire: "Hire John",
     style: "bottom-16 left-7/11"
   },
   {
-    name: "Bright Williams",
-    role: "Developer",
-    img: "/expert4.png",
+    name: "Osinachi Ekwueme",
+    role: "Web Developer",
+    img: "/talentfournew1.jpg",
     imgbanner: "/chatmobile.png",
-    hire: "Hire Bright",
+    hire: "Hire Osinachi",
     style: "-bottom-7 right-7/12 "
   },
   {
-    name: "Promise John",
+    name: "Precious Wilfred",
     role: "Product manager",
-    img: "/expert5.png",
+    img: "/talentfivemobile.jpg",
     imgbanner: "/chatmobile.png",
-    hire: "Hire Promise",
+    hire: "Hire Precious",
     style: "top-35 right-7/10"
   }
 ];
@@ -49,6 +50,7 @@ const CIRCLE_CIRCUM = 2 * Math.PI * CIRCLE_RADIUS;
 const TARGET_PERCENT = 85;
 
 const Meettheexperts = () => {
+
   const sectionRef = useRef(null);
         const [isVisible, setIsVisible] = useState(false);
         const [progress, setProgress] = useState(0);
@@ -166,9 +168,9 @@ const Meettheexperts = () => {
         {experts.map((expert, idx) => {
           // For left-side cards, place info on the left, image on the right
           const isLeft =
-            expert.name === "Thomas Smart" ||
-            expert.name === "Promise John" ||
-            expert.name === "Bright Williams";
+            expert.name === "Sarah Ibeji" ||
+            expert.name === "Precious Wilfred" ||
+            expert.name === "Osinachi Ekwueme";
           return (
             <div
               key={expert.name}
@@ -184,7 +186,8 @@ const Meettheexperts = () => {
                 <div className='flex flex-col'>
                 <div className="font-semibold text-[#111216] text-[14px]">{expert.name}</div>
                 <div className="text-[10px] xl:text-[14px] text-[#595C63]">{expert.role}</div>
-                <button className="mt-1 text-[10px] text-[#1051FF] bg-[#F3F3FF] rounded-2xl shadow-xl w-[70%] py-0.5 md:py-1 hover:text-white hover:bg-[#1051FF]">{expert.hire}</button>
+                <Link to='talentsform'><button 
+                className="mt-1 text-[10px] text-[#1051FF] bg-[#F3F3FF] rounded-2xl shadow-xl w-[80%] py-0.5 md:py-1 hover:text-white hover:bg-[#1051FF]">{expert.hire}</button></Link>
                 </div>
                 
               </div>

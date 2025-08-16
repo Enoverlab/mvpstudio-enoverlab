@@ -59,8 +59,9 @@ const Footer = () => {
           <ul className="space-y-3 text-[#222] ">
             <HashLink to='/#faq'><li className='text-[11px] md:text-base hover:text-[#1051FF] pb-3'>FAQ</li></HashLink>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Help Center</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF] whitespace-pre'><a href="#">Submit Your MVP</a></li>
             <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Terms of Use</a></li>
+            <Link to='/login'><li className='text-[11px] md:text-base hover:text-[#1051FF] whitespace-pre'>Submit a vetted MVP</li></Link>
+            
           </ul>
         </div>
         {/* Contact Us */}

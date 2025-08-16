@@ -32,7 +32,7 @@ const services = [
 
 const Hero = () => {
   return (
-    <section className="w-full  bg-gradient-to-b from-[#FBECF4] to-[#DDECFF] py-6 z-50 animate-slide-in duration-200 mt-[60px]">
+    <section className="w-full  bg-gradient-to-b from-[#FBECF4] to-[#DDECFF] py-6 z-50 mt-[60px]">
                          <div className="max-w-6xl mx-auto relative">
                            <motion.h2
                            initial={{ opacity:0, y:-50 }}

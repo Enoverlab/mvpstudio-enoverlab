@@ -1,27 +1,48 @@
-import {  useLocation } from 'react-router-dom';
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import projectsData from './projectsData'; 
-import { categories, tabs } from './projectsData'; 
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { db } from './firebase'; // adjust path if needed
 
+const categories = [
+  "AgricTech", "HealthTech", "FinTech", "EdTech", "E-Commerce", "AI", "Hospitality", "Events"
+];
+const tabs = ["All Projects", "Web App", "Mobile App"];
 
 const Mvpstudiocatalog = () => {
+  const [projects, setProjects] = useState([]);
   const [activeTab, setActiveTab] = useState("All Projects");
-  //to get the link destination from homepage
   const location = useLocation();
-const params = new URLSearchParams(location.search);
-const initialCategory = params.get('category') || categories[0];
-const [activeCategory, setActiveCategory] = useState(initialCategory);
-//
-  const navigate = useNavigate(); // Add this line
+  const params = new URLSearchParams(location.search);
+  const initialCategory = params.get('category') || categories[0];
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
+  const navigate = useNavigate();
 
-  // Filter projects by category for the active tab
-  const filteredProjects = projectsData[activeTab].filter(
-    (proj) => proj.category === activeCategory
-  );
+  // Real-time fetch from Firestore
+  useEffect(() => {
+    const unsub = onSnapshot(collection(db, "projects"), (snapshot) => {
+      const arr = [];
+      snapshot.forEach(doc => arr.push({ id: doc.id, ...doc.data() }));
+      //this will sort the projects by createdAt in descending order:
+          arr.sort((a, b) => {
+      if (!a.createdAt || !b.createdAt) return 0;
+      return b.createdAt.seconds - a.createdAt.seconds;
+    });
+      setProjects(arr);
+    });
+    return unsub;
+  }, []);
+
+  // Updated filtering logic
+  const filteredProjects = projects.filter((proj) => {
+    const categoryMatch = proj.category === activeCategory;
+    if (activeTab === "All Projects") {
+      return categoryMatch;
+    }
+    return categoryMatch && proj.tab === activeTab;
+  });
 
   return (
-    <section className="w-full min-h-screen px-2 pt-8 flex flex-col items-center">
+    <section className="w-full min-h-screen px-2 pt-8 flex flex-col items-center mb-20">
       {/* Tabs */}
       <div className="flex gap-2 mb-4 bg-[#f7fafd] px-5 py-2 rounded-2xl">
         {tabs.map((tab) => (
@@ -62,13 +83,14 @@ const [activeCategory, setActiveCategory] = useState(initialCategory);
           ) : (
             filteredProjects.map((project, idx) => (
               <div
-                key={idx}
+                key={project.id}
                 className='rounded-[24px] p-6 md:p-10 flex flex-col md:flex-row items-center shadow-md bg-gradient-to-r from-[#FFEDEE] to-[#F2EAFF]'
               >
                 {/* Left */}
                 <div className="flex-1 flex flex-col justify-center items-start mb-6 md:mb-0 md:mr-8">
-                  <h3 className="font-semibold text-lg md:text-xl mb-2">{project.title}</h3>
-                  <p className="text-sm md:text-base mb-6 text-[#222]">{project.desc}</p>
+                  <h3 className="font-semibold text-lg md:text-xl mb-2">{project.title && project.title + " ready for customization"}</h3>
+                  <p className="text-sm md:text-base mb-6 text-[#222]"> {project.desc && project.desc.length > 150 ? project.desc.slice(0, 150) + "..." : project.desc} </p>
+                  {/*this truncates the description to show only 150 characters */}
                   <button
                     className="bg-[#2563eb] text-white px-6 py-2 rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#1051FF] transition"
                     onClick={() => navigate(`/project/${activeTab}/${activeCategory}/${idx}`)}
@@ -81,7 +103,7 @@ const [activeCategory, setActiveCategory] = useState(initialCategory);
                   <img
                     src={project.img}
                     alt="Project"
-                    className="rounded-xl w-full max-w-[400px] h-auto object-cover shadow"
+                    className="rounded-xl w-full max-w-[400px] max-h-[200px] h-auto object-cover shadow"
                   />
                 </div>
               </div>

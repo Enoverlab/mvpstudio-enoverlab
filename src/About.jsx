@@ -5,6 +5,7 @@ import Reshape from './components/about/Reshape'
 import Footer from './components/Footer'
 import Hero from './components/about/Hero'
 import Navbarwhite from './components/Navbarwhite'
+import Meetourfounder from './components/about/Meetourfounder'
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
     <Hero/>
     <Special/>
     <Empower/>
+    <Meetourfounder/>
     <Reshape/>
     <Footer/>
     </div>

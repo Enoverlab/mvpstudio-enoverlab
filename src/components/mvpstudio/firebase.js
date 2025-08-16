@@ -1,0 +1,19 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBFYj2pfG4u2QI6bNgvgFmo3fuIaAxEmdM",
+    authDomain: "enoverlab-mvpstudio.firebaseapp.com",
+    projectId: "enoverlab-mvpstudio",
+    storageBucket: "enoverlab-mvpstudio.firebasestorage.app",
+    messagingSenderId: "846974642414",
+    appId: "1:846974642414:web:7626b83d5db92d3deeabff"
+};
+
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
+export const auth = getAuth(app);
