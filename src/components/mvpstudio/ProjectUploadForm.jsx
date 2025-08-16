@@ -173,6 +173,7 @@ const ProjectUploadForm = () => {
             <option>HealthTech</option>
             <option>FinTech</option>
             <option>EdTech</option>
+            <option>FoodTech</option>
             <option>E-Commerce</option>
             <option>AI</option>
             <option>Hospitality</option>

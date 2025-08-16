@@ -189,7 +189,6 @@ const Meettheexperts = () => {
                 <Link to='talentsform'><button 
                 className="mt-1 text-[10px] text-[#1051FF] bg-[#F3F3FF] rounded-2xl shadow-xl w-[80%] py-0.5 md:py-1 hover:text-white hover:bg-[#1051FF]">{expert.hire}</button></Link>
                 </div>
-                
               </div>
             </div>
           );

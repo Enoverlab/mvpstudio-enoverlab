@@ -4,7 +4,7 @@ import { collection, onSnapshot } from 'firebase/firestore';
 import { db } from './firebase'; // adjust path if needed
 
 const categories = [
-  "AgricTech", "HealthTech", "FinTech", "EdTech", "E-Commerce", "AI", "Hospitality", "Events"
+  "AgricTech", "HealthTech", "FinTech", "EdTech", "FoodTech", "E-Commerce", "AI", "Hospitality", "Events"
 ];
 const tabs = ["All Projects", "Web App", "Mobile App"];
 
