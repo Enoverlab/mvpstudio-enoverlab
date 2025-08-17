@@ -1,11 +1,11 @@
 export const questions = [
   {
     q: "How can I Contact Customer Support?",
-    a: "You can reach our customer support team via email at enoverlab@gmail.com"
+    a: "You can reach our customer support team via email at mvpstudioenoverlab@gmail.com"
   },
   {
     q: "How does Enoverlab MVP studio Works?",
-    a: "Enoverlab MVP studio is a secure and user-friendly platform designed for startups to get MVPs and guide on how to go about their company effortless. From account creation to Getting your most prefer MVP , our intuitive interface, tooltips, and in-app guides ensure a seamless experience. Plus, you'll receive real-time email and SMS notifications, keeping you updated every step of the way."
+    a: "Enoverlab MVP studio is a secure and user-friendly platform designed for startups to get MVPs and guide on how to go about their company, effortlessly. From account creation to getting your most preferred MVP, our intuitive interface, tooltips, and in-app guides ensure a seamless experience. Plus, you'll receive real-time email and SMS notifications, keeping you updated every step of the way."
   },
   {
     q: "How Secure are your services?",

@@ -25,7 +25,7 @@ const Somethinggreat = () => {
             <img className='absolute top-0 left-[59px] rotate-180' src='/elipselargemobile.png'/></span>
             <div className='absolute inset-0 flex flex-col items-center justify-center text-white gap-5'>
                 <h1 className='text-base md:text-lg lg:text-[56px] font-bold'>Let`s Start Something Great</h1>
-                <p className='w-[50%] text-[12px] md:text-base lg:text-[18px] text-center'>We offer a wide range of features that are specially designed to help teams stay organized and productive , such as task, assaignments, file sharing, and chat routing.</p>
+                <p className='w-[50%] text-[12px] md:text-base lg:text-[18px] text-center'>We offer a wide range of features that are specially designed to help teams stay organized and productive, such as task assaignments, file sharing, and chat routing.</p>
                 <Link to='/contact'><button className="max-md:hidden mt-2 md:mt-10 bg-black hover:bg-white hover:shadow-xl text-white hover:text-black px-7 py-3 rounded-lg font-semibold text-base z-10">
             Let's Talk
           </button></Link>

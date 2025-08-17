@@ -80,7 +80,7 @@ const Testimonials = () => {
               </div><div className='ml-auto mr-6'><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4'/></div></div></div></SwiperSlide>
 
               <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl h-[200px] relative'>
-          <p className='text-sm mb-7'>“I’m thoroughly impressed with the template I got, The design is modern, and the customizations are endless."</p>
+          <p className='text-sm mb-7'>“I’m thoroughly impressed with the template I got. The design is modern, and the customizations are endless."</p>
           <div className='absolute bottom-3 w-full flex flex-row'>
             <div><img src='/ben.png' className='object-contain w-15 h-15'/></div>
             <div className='flex flex-col'>
@@ -89,7 +89,7 @@ const Testimonials = () => {
               </div><div className='ml-auto mr-6'><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4'/></div></div></div></SwiperSlide>
 
               <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl h-[200px] relative'>
-          <p className='text-sm mb-7'>“This MVP is a game changer! The design is modern, clean, and professional. it saved me so much time”.</p>
+          <p className='text-sm mb-7'>“This MVP studio is a game changer! The designs are modern, clean, and professional. It saved me so much time”.</p>
           <div className='absolute bottom-3 w-full flex flex-row'>
             <div><img src='/malik.png' className='object-contain w-15 h-15'/></div>
             <div className='flex flex-col'>
@@ -98,7 +98,7 @@ const Testimonials = () => {
               </div><div className='ml-auto mr-6'><img src='/invertedcomma.png' className='object-contain w-12 h-16 py-4'/></div></div></div></SwiperSlide>
 
               <SwiperSlide ><div className='bg-white flex flex-col p-5 rounded-xl h-[200px] relative'>
-          <p className='text-sm mb-7'>“wow I’m absolutely thrilled with the talent I hired! They exceeded my expectations with their professionalism."</p>
+          <p className='text-sm mb-7'>“Wow I’m absolutely thrilled with the talent I hired! They exceeded my expectations with their professionalism."</p>
           <div className='absolute bottom-3 w-full flex flex-row'>
             <div><img src='/chika.png' className='object-contain w-15 h-15'/></div>
             <div className='flex flex-col'>

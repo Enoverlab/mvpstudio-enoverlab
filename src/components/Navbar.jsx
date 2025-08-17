@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { MdMenu, MdMenuOpen } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -65,7 +65,7 @@ const Navbar = () => {
       <div
       className="flex flex-row items-center justify-between"
       >
-      <div className='inline-block'><Link to="/"><img src="/logo.png" alt="" className='w-[25px] h-[28.19px] justify-start items-start inline-block ml-[10px]'/><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px]  inline-block'/></Link></div>
+      <div className='inline-block'><Link to="/"><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px] md:ml-[10px] inline-block'/></Link></div>
         <ul
                    ref={menuRef} 
                    className={`flex max-lg:flex-col items-center absolute top-15 lg:static w-[60%] text-center gap-7 lg:gap-9 herobg min-lg:bg-none max-lg:text-black font-medium lg:w-auto lg:bg-transparent lg:flex-row z-9999 ${
@@ -73,12 +73,12 @@ const Navbar = () => {
                    }`}
                  >
                    <li className={`block ${isOpen ? "pt-10" : "max-lg:hidden"} pt-2 justify-between 
-                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/">Home</Link></li>
+                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><NavLink to="/" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Home</NavLink></li>
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
   text-black active:text-indigo-900 lg:hover:text-indigo-900 max-lg:text-black `} 
   ref={dropRef}
 >
-  <Link to="/about" className='max-lg:hover:text-blue-700'>About Us</Link>
+  <NavLink to="/about" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>About Us</NavLink>
   {/* Dropdown Button */}
   <div className='inline-block ml-1'>
     <button
@@ -91,14 +91,14 @@ const Navbar = () => {
   {/* Dropdown Section */}
   {dropdownOpen && (
     <ul className='lg:absolute lg:top-14 lg:left-[40%] bg-white shadow-lg rounded-lg p-4 z-50 duration-500 hover:text-blue-700 text-sm'>
-      <Link to='/services' className='max-lg:hover:text-blue-700'><li>Services</li></Link>
+      <NavLink to="/services" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Services</NavLink>
     </ul>
   )}
 </li>
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
-                         text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/talents">Talents</Link></li>
+                         text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><NavLink to="/talents" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Talents</NavLink></li>
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
-                         text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/contact">Contact US</Link></li>
+                         text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><NavLink to="/contact" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Contact US</NavLink></li>
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/mvpstudio">MVP Studio</Link></li>
                  </ul>

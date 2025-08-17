@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { MdMenu, MdMenuOpen } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -61,7 +61,7 @@ const Navbarwhite = () => {
        <div
        className="flex flex-row items-center justify-between"
        >
-       <div className='inline-block'><Link to="/"><img src="/logo.png" alt="" className='w-[25px] h-[28.19px] justify-start items-start inline-block ml-[10px]'/><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px] inline-block'/></Link></div>
+       <div className='inline-block'><Link to="/"><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px] md:ml-[10px] inline-block'/></Link></div>
          <ul
            ref={menuRef} 
            className={`flex max-lg:flex-col items-center absolute top-15 lg:static w-[60%] text-center gap-7 lg:gap-9 abouthero min-lg:bg-none max-lg:text-white font-medium lg:w-auto lg:bg-transparent lg:flex-row z-9999 ${
@@ -74,7 +74,7 @@ const Navbarwhite = () => {
              text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} 
              ref={dropRef}
            >
-             <Link to="/about" className='max-lg:hover:text-cyan-200'>About Us</Link>
+             <NavLink to="/about" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600' : ''}`}>About Us</NavLink>
              {/* Dropdown Button */}
              <div className='inline-block ml-1'>
                <button
@@ -87,7 +87,7 @@ const Navbarwhite = () => {
              {/* Dropdown Section */}
              {dropdownOpen && (
                <ul className='lg:absolute lg:top-14 lg:left-[40%] bg-white shadow-lg rounded-lg p-4 z-50 duration-500 hover:text-indigo-900 text-sm text-black'>
-                 <Link to='/services' className='text-black hover:text-indigo-900'><li>Services</li></Link>
+                 <NavLink to="/services" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Serivces</NavLink>
                </ul>
              )}
            </li>
@@ -96,7 +96,7 @@ const Navbarwhite = () => {
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/contact">Contact US</Link></li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
-                 text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/mvpstudio">MVP Studio</Link></li>
+                 text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><NavLink to="/mvpstudio" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600' : ''}`}>MVP Studio</NavLink></li>
          </ul>
          <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 bg-[#1051FF] text-white hover:bg-white hover:text-[#1051FF] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
          <button 

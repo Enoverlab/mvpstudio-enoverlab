@@ -68,7 +68,7 @@ const Special = () => {
         className='flex flex-col gap-5 text-center p-5 bg-white rounded-2xl'>
             <div className='bg-[#B9CEF9] w-15 h-15 rounded-full mx-auto flex justify-center items-center'><img src='/teamwork.png'/></div>
             <h1 className='font-bold text-base md:text-2xl'>Teamwork</h1>
-            <p className='font-normal text-sm'>At the core of every product we build is a collaborative spirit. We work closely with you to create viable solutions.</p>
+            <p className='font-normal text-sm'>At the core of every product we build, is a collaborative spirit. We work closely with you to create viable solutions.</p>
         </motion.div>
         </div>
       <div className='mb-10 max-md:hidden'><Heromarquee/></div>

@@ -24,7 +24,7 @@ const Hero = () => {
           You Never Start From <span className="text-[#1051FF]">Scratch</span>
         </h1>
         <p className="text-[#595C63] text-sm lg:text-base mb-8 max-w-xl">
-          We Empower startups, SMEs, and organization by offering ready to use and customizable MVPs That helps business scale their ideas without the typical hurdles of Cost and Time.
+          We empower startups, SMEs, and organizations by offering ready to use and customizable MVPs that help businesses scale their ideas without the typical hurdles of cost and time.
         </p>
         <div className="flex gap-4 flex-wrap">
           <Link to='/mvpstudio'><button className="px-3 w-[174px] h-[48px] py-2 border border-[#1051FF] rounded-lg text-[#121212] text-sm lg:font-medium bg-white hover:bg-[#1051FF] hover:text-white transition">
