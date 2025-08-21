@@ -278,6 +278,44 @@ height: 700px;
     height: 60px;
 }
 
+@media screen and (max-width: 1280px) {
+.item2{
+position: absolute;
+left: 0;
+bottom: max(calc(240px * 9), 100%);
+animation-name: scrollleft1;
+animation-duration: 160s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+border-radius: 16px;
+}
+
+@keyframes scrollleft1 {
+    
+    to {
+        bottom: -230px;
+    }
+}
+
+.item3{
+position: absolute;
+left:0;
+top: max(calc(240px * 10), 100%);
+animation-name: scrollleft2;
+animation-duration: 170s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+border-radius: 16px;
+}
+
+@keyframes scrollleft2 {
+    
+    to {
+        top: -230px;
+    }
+}
+}
+
 @media screen and (max-width: 1024px) {
     .item1 {
     width: 150px;

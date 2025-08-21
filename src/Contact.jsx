@@ -67,7 +67,7 @@ const Contact = () => {
               >
                 <h2 className="text-center font-medium text-lg mb-2">Send us a Direct Message</h2>
                 <p className="text-center text-sm text-[#595C63] mb-4">
-                  We are dedicated to making our process collaborative, we are inspired to tell our clients' stories in their own way, with our Unique touch.
+                  We are dedicated to making our process collaborative. We are inspired to tell our clients' stories in their own way, with our Unique touch.
                 </p>
                     <label className="text-sm font-medium">First Name</label>
                 <input
@@ -140,7 +140,7 @@ const Contact = () => {
     }}
   >
     <div className="flex flex-col items-center justify-center bg-[#b7b2ce] p-6 rounded-lg">
-      <div className='flex flex-row'><Link to="/"><img src="/logo.png" alt="" className='w-[25px] h-[28.19px] justify-start items-start inline-block ml-[10px]'/><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px]  inline-block'/></Link></div>
+      <div className='flex flex-row'><Link to="/"><img src='/logo1.png' className='w-[118.88px] max-h-[36.19px]  inline-block'/></Link></div>
           <h2 className="text-xl font-semibold mt-4 mb-4 text-[#3c235c]">We have received your message!</h2>
           <p className="text-gray-800 mb-4 font-medium italic">We will get back to you shortly</p>
          <button

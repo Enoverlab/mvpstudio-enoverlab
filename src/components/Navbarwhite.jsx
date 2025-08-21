@@ -74,7 +74,7 @@ const Navbarwhite = () => {
              text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} 
              ref={dropRef}
            >
-             <NavLink to="/about" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600' : ''}`}>About Us</NavLink>
+             <NavLink to="/about" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600 lg:text-indigo-900' : ''}`}>About Us</NavLink>
              {/* Dropdown Button */}
              <div className='inline-block ml-1'>
                <button
@@ -96,7 +96,7 @@ const Navbarwhite = () => {
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/contact">Contact US</Link></li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
-                 text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><NavLink to="/mvpstudio" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600' : ''}`}>MVP Studio</NavLink></li>
+                 text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><NavLink to="/mvpstudio" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600 lg:text-indigo-900' : ''}`}>MVP Studio</NavLink></li>
          </ul>
          <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 bg-[#1051FF] text-white hover:bg-white hover:text-[#1051FF] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
          <button 

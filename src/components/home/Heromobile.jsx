@@ -45,7 +45,7 @@ modifier: 1,
 slideShadows: false,
 }}
 modules={[Autoplay, EffectCoverflow]}
-className='mySwiper swiper-slide'
+className='mySwiper swiper-slide max-w-[768px]'
 >
     <SwiperSlide className='rounded-3xl'>
         <img src="/firstverticalimage1.png" className='rounded-3xl w-[200px] sm:w-[300px] h-[240px] sm:h-[300px]'/>

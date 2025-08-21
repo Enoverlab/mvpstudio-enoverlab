@@ -19,11 +19,11 @@ const Hero = () => {
             4.9/5 (Based on 10000+ happy users)
           </span>
         </div>
-        <h1 className="text-3xl lg:text-5xl font-bold text-[#121212] mb-4 leading-tight">
+        <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold text-[#121212] mb-4 leading-tight">
           Enoverlab Makes Sure
-          You Never Start From <span className="text-[#1051FF]">Scratch</span>
+          You Never Start From<br className='min-[1190px]:hidden'/> <span className="text-[#1051FF]">Scratch</span>
         </h1>
-        <p className="text-[#595C63] text-sm lg:text-base mb-8 max-w-xl">
+        <p className="text-[#595C63] text-sm xl:text-base mb-8 max-w-xl">
           We empower startups, SMEs, and organizations by offering ready to use and customizable MVPs that help businesses scale their ideas without the typical hurdles of cost and time.
         </p>
         <div className="flex gap-4 flex-wrap">
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-1/2 flex overflow-hidden pb-5">
+      <div className="w-1/2 flex overflow-hidden pb-5 pr-5">
    <Heromarqueevertical/>
     </div>
     </div>

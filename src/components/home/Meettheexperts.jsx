@@ -203,7 +203,7 @@ const Meettheexperts = () => {
       delay: 0.5,
       damping: 20,
     }}
-        className='w-[35%] flex flex-col xl:px-2 gap-7 max-lg:hidden mt-15 xl:mt-25 xl:pr-7'>
+        className='w-[35%] flex flex-col pr-5 xl:px-2 gap-7 max-lg:hidden mt-15 xl:mt-25 xl:pr-7'>
         <h1 className='text-[#12141D] text-[36px] font-semibold underline decoration-[#1051FF]'>Organize & prioritize all your work with our team</h1>
         <p className='text-[16px] font-medium'>Sort out the most important and urgent tasks & concentrate on them first  base your priorities</p>
         <p className='text-[14px] text-black'>Multi-voting helps a committee or group narrow down a large number of items into just a few items on which to focus & similar to multi-voting, this approach.</p>

@@ -3,20 +3,21 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { auth } from "./components/mvpstudio/firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { Navigate } from "react-router-dom";
 import Home from './Home'
 import About from './About'
-import Talents from './Talents'
 import Contact from './Contact'
 import ScrollToTop from './ScrollToTop'
-import Mvpstudio from './components/Mvpstudio'
-import TalentsForm from './components/talents/Talentsform'
-import ProjectDetails from './components/mvpstudio/ProjectDetails'
 import Services from './Services'
-import ProjectUploadForm from './components/mvpstudio/ProjectUploadForm'
 import Login from './components/mvpstudio/Login'
 
+// Lazy-loaded components
+const Talents = lazy(() => import('./Talents'));
+const Mvpstudio = lazy(() => import('./components/Mvpstudio'));
+const TalentsForm = lazy(() => import('./components/talents/Talentsform'));
+const ProjectUploadForm = lazy(() => import('./components/mvpstudio/ProjectUploadForm'));
+const ProjectDetails = lazy(() => import('./components/mvpstudio/ProjectDetails'));
 
 function App() {
 
@@ -34,22 +35,27 @@ const ProtectedRoute = ({ children }) => {
   return (
     <>
      <BrowserRouter>
-    <Routes>
-      <Route path='/' element={ <Home/> }/>
-      <Route path='/about' element={ <About/> }/>
-      <Route path='/talents' element={ <Talents/> }/>
-      <Route path='/contact' element={ <Contact/> }/>
-      <Route path='/mvpstudio' element={ <Mvpstudio/> }/>
-      <Route path='/services' element={ <Services/> }/>
-      <Route path='/talentsform' element={<TalentsForm/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path="/projectupload" element={
-  <ProtectedRoute>
-    <ProjectUploadForm />
-  </ProtectedRoute>
-} />
-      <Route path='/project/:tab/:category/:idx' element={<ProjectDetails/>}/>
-    </Routes>
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center herobg flex-col gap-5">
+      <img src='/logo1.png' className='w-[118.88px] h-[36.19px] md:w-[250px] md:h-[50px] inline-block'/>
+      <p>is loading...</p>
+      </div>}>
+      <Routes>
+        <Route path='/' element={ <Home/> }/>
+        <Route path='/about' element={ <About/> }/>
+        <Route path='/talents' element={ <Talents/> }/>
+        <Route path='/contact' element={ <Contact/> }/>
+        <Route path='/mvpstudio' element={ <Mvpstudio/> }/>
+        <Route path='/services' element={ <Services/> }/>
+        <Route path='/talentsform' element={<TalentsForm/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path="/projectupload" element={
+          <ProtectedRoute>
+            <ProjectUploadForm />
+          </ProtectedRoute>
+        } />
+        <Route path='/project/:tab/:category/:idx' element={<ProjectDetails/>}/>
+      </Routes>
+    </Suspense>
     <ScrollToTop/>
     </BrowserRouter> 
     </>

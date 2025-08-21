@@ -135,8 +135,8 @@ const ProjectDetails = () => {
                     backgroundRepeat: "no-repeat"
                   }}
                 >
-                  <div className='bg-white flex flex-row w-full md:w-[90%] md:left-[5%] p-1 md:p-2 absolute bottom-2 gap-2'>
-                    <div className='w-[60%] flex flex-col gap-3 text-[10px] whitespace-pre'>
+                  <div className='bg-white flex flex-row w-full lg:w-[90%] lg:left-[5%] p-1 md:p-2 absolute bottom-2 gap-2'>
+                    <div className='w-[60%] flex flex-col gap-3 text-[9px] lg:text-[10px] whitespace-pre'>
                       <p>{expert.expertfirstname} <span>{expert.expertsecondname}</span></p>
                       <p>{expert.role}</p>
                     </div>
@@ -146,7 +146,7 @@ const ProjectDetails = () => {
                         <FaFacebook/>
                         <FaWhatsapp/>
                       </div>
-                      <Link to='/talentsform'><button className="text-[8px] text-[#1051FF] w-[100%] bg-[#DFDFEE] rounded-lg py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] flex justify-center items-center whitespace-pre">
+                      <Link to='/talentsform'><button className="text-[7px] lg:text-[8px] text-[#1051FF] w-[100%] bg-[#DFDFEE] rounded-lg py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] flex justify-center items-center whitespace-pre">
                         Hire <span>{expert.expertfirstname}</span>
                       </button></Link>
                     </div>
