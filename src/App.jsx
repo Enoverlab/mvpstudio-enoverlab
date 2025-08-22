@@ -36,8 +36,8 @@ const ProtectedRoute = ({ children }) => {
     <>
      <BrowserRouter>
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center herobg flex-col gap-5">
-      <img src='/logo1.png' className='scale-30 md:scale-50 inline-block'/>
-      <p className='md:text-lg font-semibold'>is loading...</p>
+      <img src='/logo1.png' className='max-md:hidden scale-50 inline-block'/>
+      <p className='text-lg md:text-xl font-semibold'><span className='md:hidden text-indigo-800 font-bold text-xl'>MVP Studio</span>is loading...</p>
       </div>}>
       <Routes>
         <Route path='/' element={ <Home/> }/>
