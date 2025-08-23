@@ -63,10 +63,11 @@ body{
 .swiper-button-next, .swiper-button-prev{
     bottom:0;
     top: 300px;
-    scale: 70%;
+    scale: 0.6;
     transform: translateX(-45%);
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.6);
     -webkit-transform: translateX(-45%);
+    
 }
 
 #swiper-slide{
