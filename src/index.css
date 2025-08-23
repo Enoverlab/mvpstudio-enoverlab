@@ -65,6 +65,8 @@ body{
     top: 300px;
     scale: 70%;
     transform: translateX(-45%);
+    -webkit-transform: scale(0.7);
+    -webkit-transform: translateX(-45%);
 }
 
 #swiper-slide{

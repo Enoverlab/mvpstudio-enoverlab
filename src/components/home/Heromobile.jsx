@@ -27,7 +27,7 @@ const Heromobile = () => {
         </div>
       <h1 className='sm:text-[2.5rem] text-[26px] leading-9 font-bold text-center'>Enoverlab Makes Sure
           You Never Start From <span className='sm:hidden'><br/></span><span className="text-[#1051FF]">Scratch</span></h1>
-<p className='text-sm text-center'>We empower startups, SMEs, and organizations by offering ready to use and customizable MVPs that help businesses scale their ideas without the typical hurdles of cost and time.</p>
+<p className='text-sm text-center font-normal'>We empower startups, SMEs, and organizations by offering ready to use and customizable MVPs that help businesses scale their ideas without the typical hurdles of cost and time.</p>
       </motion.div>
 
 <Swiper
