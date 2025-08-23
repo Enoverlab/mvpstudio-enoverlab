@@ -67,7 +67,6 @@ body{
     transform: translateX(-45%);
     -webkit-transform: scale(0.6);
     -webkit-transform: translateX(-45%);
-    
 }
 
 #swiper-slide{
@@ -75,11 +74,11 @@ body{
 }
 
 .swiper-button-prev {
-    left: calc(50% - 20px);
+    left: calc(50% - 30px);
 }
 
 .swiper-button-next {
-    right: calc(50% - 60px);
+    right: calc(50% - 70px);
 }
 
 .abouthero {
