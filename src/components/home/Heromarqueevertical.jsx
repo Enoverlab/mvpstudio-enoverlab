@@ -3,7 +3,6 @@ import React from 'react'
 const Heromarqueevertical = () => {
   return (
     <>
-    
     <div className='wrapper2 flex flex-1 justify-start items-start'>
       <div className='item2 item21 flex'><img src='/secondverticalimage2.png' className='max-[1280px]:h-[250px] h-[300px] w-[300px] rounded-lg'/></div>
       <div className='item2 item22 flex'><img src='/firstverticalimage2.png' className='max-[1280px]:h-[250px] h-[300px] w-[300px] rounded-lg'/></div>
@@ -15,7 +14,7 @@ const Heromarqueevertical = () => {
       <div className='item2 item28 flex'><img src='/firstverticalimage2.png' className='max-[1280px]:h-[250px] h-[300px] w-[300px] rounded-lg'/></div>
       <div className='item2 item29 flex'><img src='/firstverticalimage3.png' className='max-[1280px]:h-[250px] h-[300px] w-[300px] rounded-b-2xl'/></div>
     </div>
-    <div className='flex max-xl:w-4 xl:w-5'></div>
+    <div className='xl:hidden flex max-xl:w-4'></div>
 
     <div className='wrapper3 flex flex-1 justify-start items-start'>
       <div className='item3 item31'><img src='/firstverticalimage3.png' className='max-[1280px]:h-[250px] h-[300px] w-[300px] rounded-b-2xl'/></div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Heromarqueemobile = () => {
   return (
     <>
-      <div className='wrapper1mobile'>
+      <div className='wrapper1mobile sm:mt-10'>
         <div className='item1 item11 flex inset-0 items-center justify-center '><img src='/digitaloceanlogo.png' className='inline-block mr-1 max-md:h-3 w-5 h-5'/><img src='/digitalocean.png' className='inline-block'/></div>
         <div className='item1 item12 flex inset-0 items-center justify-center'><img src='/brexlogo.png' className='inline-block mr-1 w-5 h-5'/><img src='/brex.png' className='inline-block  w-10 h-6'/></div>
         <div className='item1 item13 flex inset-0 items-center justify-center'><img src='/bubble.png' className='inline-block max-md:h-3 w-18 h-5'/></div>

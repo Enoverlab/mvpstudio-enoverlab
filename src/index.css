@@ -53,16 +53,17 @@ body{
 }
 
 .swiper-button-next::after{
-    content: url('/arrowrightfifty.png');
+    content: url('/testimonyright.png');
 }
 
 .swiper-button-prev::after{
-    content: url('/arrowleftfifty.png');
+    content: url('/testimonyleft.png');
 }
 
 .swiper-button-next, .swiper-button-prev{
     bottom:0;
     top: 300px;
+    scale: 70%;
     transform: translateX(-45%);
 }
 
