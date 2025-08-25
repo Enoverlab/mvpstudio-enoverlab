@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {db, storage } from './firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { logFirebaseEvent } from './firebase';
 import Navbar from '../Navbar';
 
 
@@ -130,6 +131,7 @@ const ProjectUploadForm = () => {
         img2: imgUrls.img2,
         img3: imgUrls.img3,
       });
+      logFirebaseEvent("project_upload", { title: form.title, category: form.category });
       alert("Project uploaded!");
       setForm({
         tab: "All Projects",

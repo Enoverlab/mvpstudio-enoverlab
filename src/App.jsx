@@ -11,13 +11,14 @@ import Contact from './Contact'
 import ScrollToTop from './ScrollToTop'
 import Services from './Services'
 import Login from './components/mvpstudio/Login'
+import ProjectDetails from './components/mvpstudio/ProjectDetails';
 
 // Lazy-loaded components
 const Talents = lazy(() => import('./Talents'));
 const Mvpstudio = lazy(() => import('./components/Mvpstudio'));
 const TalentsForm = lazy(() => import('./components/talents/Talentsform'));
 const ProjectUploadForm = lazy(() => import('./components/mvpstudio/ProjectUploadForm'));
-const ProjectDetails = lazy(() => import('./components/mvpstudio/ProjectDetails'));
+
 
 function App() {
 

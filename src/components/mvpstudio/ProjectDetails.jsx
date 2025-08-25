@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Thumbs } from'swiper/modules'; 
 import { useParams, Link } from 'react-router-dom';
 import { collection, onSnapshot } from 'firebase/firestore';
-import { db } from './firebase';
+import { db, logFirebaseEvent } from './firebase';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
@@ -13,6 +13,14 @@ const ProjectDetails = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  // Filter by tab and category
+  const filteredProjects = projects.filter(
+    (proj) =>
+      (tab === "All Projects" ? true : proj.tab === tab) &&
+      proj.category === category
+  );
+  const project = filteredProjects[idx];
 
   useEffect(() => {
     const unsub = onSnapshot(collection(db, "projects"), (snapshot) => {
@@ -24,16 +32,16 @@ const ProjectDetails = () => {
     return unsub;
   }, []);
 
-  // Filter by tab and category
-  const filteredProjects = projects.filter(
-  (proj) =>
-    (tab === "All Projects" ? true : proj.tab === tab) &&
-    proj.category === category
-);
-  const project = filteredProjects[idx];
-
+  useEffect(() => {
+    // Log data view when project details are loaded
+    if (!loading && project) {
+      logFirebaseEvent("project_view", { projectId: project.id, title: project.title });
+    }
+  }, [loading, project]);
+  
   if (loading) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
   if (!project) return <div className="min-h-screen flex items-center justify-center text-gray-500">Project not found.</div>;
+
 
   return (
     <>

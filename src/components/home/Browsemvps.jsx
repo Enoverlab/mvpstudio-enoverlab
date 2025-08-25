@@ -35,12 +35,12 @@ const Browsemvps = () => {
     }}
                 className='w-full flex flex-col md:flex-row bg-gradient-to-l from-[#FFEDEE] to-[#F2EAFF] border-white border-1 rounded-4xl relative'>
                     <div className='w-full md:w-1/2 flex flex-col p-5 md:p-10 lg:p-15 xl:p-20 gap-6'>
-                        <h1 className='text-[24px] md:text-[48px] text-[#484848] font-bold max-md:pt-7'>FinTech</h1>
-                        <p className='text-sm md:text-base text-[#484848]'>A secure  payment gateway MVP in 12 weeks, designed and implemented by our team.</p>
-                        <p className='text-sm md:text-base text-[#595C63]'>→ Compliance-first architecture | Rapid prototyping | Investor pitch prep</p>
-                        <Link to={`/mvpstudio?category=FinTech`} className='bg-[#F5F3FF] w-[129px] md:w-[185px] h-[33px] md:h-[48px] mr-3 text-[#17BDF9] rounded-lg text-xs md:text-sm md:absolute md:bottom-[32px] hover:text-white hover:bg-[#17BDF9] flex items-center justify-center'>Learn More<MdArrowOutward className='inline-block ml-1 mb-1'/></Link>
+                        <h1 className='text-[24px] md:text-[32px] lg:text-[48px] text-[#484848] font-bold max-md:pt-7'>FinTech</h1>
+                        <p className='text-sm lg:text-base text-[#484848]'>A secure  payment gateway MVP in 12 weeks, designed and implemented by our team.</p>
+                        <p className='text-sm lg:text-base text-[#595C63]'>→ Compliance-first architecture | Rapid prototyping | Investor pitch prep</p>
+                        <Link to={`/mvpstudio?category=FinTech`} className='bg-[#F5F3FF] w-[129px] md:w-[185px] h-[33px] lg:h-[48px] mr-3 text-[#17BDF9] rounded-lg text-xs md:text-sm md:absolute md:bottom-[32px] hover:text-white hover:bg-[#17BDF9] flex items-center justify-center'>Learn More<MdArrowOutward className='inline-block ml-1 mb-1'/></Link>
                     </div>
-                    <div className='flex md:w-1/2 max-md:ml-auto justify-end md:justify-center md:p-8'><img src='browsemvps1.png' className='w-[539px] h-[410px] max-md:hidden'/>
+                    <div className='flex md:w-1/2 max-md:ml-auto justify-end md:justify-center md:p-8'><img src='browsemvps1.png' className='hidden md:block md:w-[500px] md:h-[300px] lg:w-[539px] lg:h-[410px]'/>
                     <img src='browsemvps1mobile.png' className='w-[238px] h-[185px] md:hidden'/>
                     </div>
                 </motion.div>
@@ -56,12 +56,12 @@ const Browsemvps = () => {
     }}
                 className='w-full flex flex-col md:flex-row bg-gradient-to-l from-[#D9ECFF] to-[#E7EDFF] border-white border-1 rounded-4xl relative'>
                     <div className='w-full md:w-1/2 flex flex-col p-5 md:p-10 lg:p-15 xl:p-20 gap-6'>
-                        <h1 className='text-[24px] md:text-[48px] text-[#484848] font-bold max-md:pt-7'>HealthTech</h1>
-                        <p className='text-sm md:text-base text-[#484848]'>Launch an AI-driven diagnostics platform, achieving health solutions.</p>
-                        <p className='text-sm md:text-base text-[#595C63]'>→ Regulatory navigation | HIPAA-compliant design | Pilot-to-scale strategy</p>
-                        <Link to={`/mvpstudio?category=HealthTech`} className='bg-[#F5F3FF] w-[129px] md:w-[185px] h-[33px] md:h-[48px] mr-3 text-[#17BDF9] rounded-lg text-xs md:text-sm md:absolute md:bottom-[32px] hover:text-white hover:bg-[#17BDF9] flex items-center justify-center'>Learn More<MdArrowOutward className='inline-block ml-1 mb-1'/></Link>
+                        <h1 className='text-[24px] md:text-[32px] lg:text-[48px] text-[#484848] font-bold max-md:pt-7'>HealthTech</h1>
+                        <p className='text-sm lg:text-base text-[#484848]'>Launch an AI-driven diagnostics platform, achieving health solutions.</p>
+                        <p className='text-sm lg:text-base text-[#595C63]'>→ Regulatory navigation | HIPAA-compliant design | Pilot-to-scale strategy</p>
+                        <Link to={`/mvpstudio?category=HealthTech`} className='bg-[#F5F3FF] w-[129px] md:w-[185px] h-[33px] lg:h-[48px] mr-3 text-[#17BDF9] rounded-lg text-xs md:text-sm md:absolute md:bottom-[32px] hover:text-white hover:bg-[#17BDF9] flex items-center justify-center'>Learn More<MdArrowOutward className='inline-block ml-1 mb-1'/></Link>
                     </div>
-                    <div className='flex md:w-1/2 max-md:ml-auto justify-end md:justify-center md:p-8'><img src='browsemvps2.png' className='w-[539px] h-[410px] max-md:hidden'/>
+                    <div className='flex md:w-1/2 max-md:ml-auto justify-end md:justify-center md:p-8'><img src='browsemvps2.png' className='hidden md:block md:w-[500px] md:h-[300px] lg:w-[539px] lg:h-[410px]'/>
                     <img src='browsemvps2mobile.png' className='w-[238px] h-[185px] md:hidden'/>
                     </div>
                 </motion.div>
@@ -77,12 +77,12 @@ const Browsemvps = () => {
     }}
                 className='w-full flex flex-col md:flex-row bg-gradient-to-l from-[#E2EDFF] to-[#F6EBFA] border-white border-1 rounded-4xl relative'>
                     <div className='w-full md:w-1/2 flex flex-col p-5 md:p-10 lg:p-15 xl:p-20 gap-6'>
-                        <h1 className='text-[24px] md:text-[48px] text-[#484848] font-bold max-md:pt-7'>E-commerce</h1>
-                        <p className='text-sm md:text-base text-[#484848]'>A Ready to use,  E-commerce platform.</p>
-                        <p className='text-sm md:text-base text-[#595C63]'>→ Regulatory navigation | HIPAA-compliant design | Pilot-to-scale strategy.</p>
-                        <Link to={`/mvpstudio?category=E-Commerce`} className='bg-[#F5F3FF] w-[129px] md:w-[185px] h-[33px] md:h-[48px] mr-3 text-[#17BDF9] rounded-lg text-xs md:text-sm md:absolute md:bottom-[32px] hover:text-white hover:bg-[#17BDF9] flex items-center justify-center'>Learn More<MdArrowOutward className='inline-block ml-1 mb-1'/></Link>
+                        <h1 className='text-[24px] md:text-[32px] lg:text-[48px] text-[#484848] font-bold max-md:pt-7'>E-commerce</h1>
+                        <p className='text-sm lg:text-base text-[#484848]'>A Ready to use,  E-commerce platform.</p>
+                        <p className='text-sm lg:text-base text-[#595C63]'>→ Regulatory navigation | HIPAA-compliant design | Pilot-to-scale strategy.</p>
+                        <Link to={`/mvpstudio?category=E-Commerce`} className='bg-[#F5F3FF] w-[129px] md:w-[185px] h-[33px] lg:h-[48px] mr-3 text-[#17BDF9] rounded-lg text-xs md:text-sm md:absolute md:bottom-[32px] hover:text-white hover:bg-[#17BDF9] flex items-center justify-center'>Learn More<MdArrowOutward className='inline-block ml-1 mb-1'/></Link>
                     </div>
-                    <div className='flex md:w-1/2 max-md:ml-auto justify-end md:justify-center md:p-8'><img src='browsemvps3.png' className='w-[539px] h-[410px] max-md:hidden'/>
+                    <div className='flex md:w-1/2 max-md:ml-auto justify-end md:justify-center md:p-8'><img src='browsemvps3.png' className='hidden md:block md:w-[500px] md:h-[300px] lg:w-[539px] lg:h-[410px]'/>
                     <img src='browsemvps3mobile.png' className='w-[238px] h-[185px] md:hidden'/>
                     </div>
                 </motion.div>

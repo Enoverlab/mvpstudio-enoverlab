@@ -3,13 +3,13 @@ import Navbar from "../Navbar";
 import { useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { logFirebaseEvent } from "./firebase";
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [isAuthenticating, setIsAuthenticating] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -22,10 +22,12 @@ const Login = () => {
     setIsAuthenticating(true);
     try {
       await signInWithEmailAndPassword(auth, form.email, form.password);
+      logFirebaseEvent("login", { email:form.email });
       navigate("/projectupload");
     } catch (err) {
       setError("Invalid email or password.");
     }
+    setIsAuthenticating(false);
   };
 
   return (
