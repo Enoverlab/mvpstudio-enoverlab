@@ -194,7 +194,7 @@ const ProjectUploadForm = () => {
       </label>
       <label className='max-sm:text-[12px]'>Description of Your MVP
         <textarea name="desc"
-        maxLength={300}  //limits characters to 200
+        maxLength={450}  //limits characters to 450
         onKeyDown={handleKeyDown}
         value={form.desc} 
         onChange={handleChange} 
@@ -202,7 +202,7 @@ const ProjectUploadForm = () => {
         placeholder='Write a concise description of your MVP'
         rows='3'
         required />
-        <p>Characters remaining: {300 - form.desc.length}</p>
+        <p>Characters remaining: {450 - form.desc.length}</p>
       </label>
       <label className='max-sm:text-[12px]'>Input the First Image Screenshot of Your MVP <input type="file" name="img" accept="image/*" onChange={handleChange} className="border p-2 rounded mvpuploadgradient w-full cursor-pointer"  required /></label>
       <label className='max-sm:text-[12px]'>Input the Second Image Screenshot of Your MVP <input type="file" name="img1" accept="image/*" onChange={handleChange} className="border p-2 rounded mvpuploadgradient w-full cursor-pointer" required /></label>
@@ -214,11 +214,11 @@ const ProjectUploadForm = () => {
         <h3 className="font-semibold mb-2 text-[12px]">Add Details and Image of the Experts who worked on the MVP</h3>
         {form.experts.map((expert, idx) => (
           <div key={idx} className="border p-2 mb-2 rounded flex flex-col gap-1">
-            <input name="expertfirstname" placeholder="First Name" value={expert.expertfirstname} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" required />
-            <input name="expertsecondname" placeholder="Second Name" value={expert.expertsecondname} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" required />
-            <input name="role" placeholder="Expert Role" value={expert.role} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" required />
+            <input name="expertfirstname" placeholder="First Name" value={expert.expertfirstname} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
+            <input name="expertsecondname" placeholder="Second Name" value={expert.expertsecondname} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
+            <input name="role" placeholder="Expert Role" value={expert.role} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
             <label className='text-[12px]'>Input the Expert`s Close-up Portrait</label>
-            <input type="file" name="expertimg" accept="image/*" onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded mvpuploadgradient w-full cursor-pointer" required />
+            <input type="file" name="expertimg" accept="image/*" onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded mvpuploadgradient w-full cursor-pointer" />
             <label className='text-[12px]'>Additional Information (Optional)</label>
             <input name="linkedin" placeholder="Expert's linkedin account link" value={expert.linkedin} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
             <input name="whatsapp" placeholder="Expert's whatsapp account link" value={expert.whatsapp} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
@@ -232,7 +232,7 @@ const ProjectUploadForm = () => {
         ))}
         <button type="button" onClick={addExpert} className="bg-blue-100 px-2 py-1 rounded text-blue-700 text-xs mt-1">Add Expert</button>
       </div>
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded" disabled={uploading}>
+      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer" disabled={uploading}>
         {uploading ? "Uploading..." : "Upload Project"}
       </button>
     </form>

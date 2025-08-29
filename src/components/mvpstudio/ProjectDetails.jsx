@@ -9,7 +9,7 @@ import Footer from '../Footer';
 import Navbar from '../Navbar';
 
 const ProjectDetails = () => {
-  const { tab, category, idx } = useParams();
+  const { tab, category, id } = useParams();
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ const ProjectDetails = () => {
       (tab === "All Projects" ? true : proj.tab === tab) &&
       proj.category === category
   );
-  const project = filteredProjects[idx];
+  const project = filteredProjects.find(proj => proj.id === id);
 
   useEffect(() => {
     const unsub = onSnapshot(collection(db, "projects"), (snapshot) => {
@@ -111,11 +111,13 @@ const ProjectDetails = () => {
           <div className="w-full md:w-1/2 flex flex-col justify-center md:items-start max-md:text-center">
             <h2 className="font-semibold text-xl md:text-2xl mb-2 capitalize">{project.title}</h2>
             <p className="text-sm md:text-base mb-6 text-[#222]">{project.desc}</p>
-            <a href={project.explorelink} target='_blank' rel="noopener noreferrer" className='w-full'>
+            <Link to='/contact' className='bg-[#2563eb] text-white px-6 py-2 md:py-3 rounded-lg w-full font-medium text-sm hover:bg-[#1051FF] transition mb-4 text-center'> Get this MVP
+            </Link>
+            {/* <a href={project.explorelink} target='_blank' rel="noopener noreferrer" className='w-full'>
               <button className="bg-[#2563eb] text-white px-6 py-2 md:py-3 rounded-lg w-full font-medium text-sm hover:bg-[#1051FF] transition mb-4">
                 Explore
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
         {/* Experts Section */}

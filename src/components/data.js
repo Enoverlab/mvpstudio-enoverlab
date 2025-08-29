@@ -24,8 +24,8 @@ export const questions = [
 export const reviews = [
   {
     name: "Sarah Ibeji",
-    img: "/talentone.jpg",
-    imgmobile: "/talentonemobile.jpg",
+    img: "/ibeji.png",
+    imgmobile: "/ibejimobile.png",
     role: "Head of Product",
     role2: "(Senior Level)",
     text: "Sarah is a dynamic product manager with extensive cross-industry experience, leading over 70 open-source projects with teams of more than 1,500 professionals. She excels in product strategy, market analysis, and team leadership, delivering innovative solutions that drive business growth and empower individuals and organizations worldwide.",
@@ -37,8 +37,8 @@ export const reviews = [
   },
   {
     name: "Okpanachi Isah",
-    img: "/talenttwo.jpg",
-    imgmobile: "talenttwomobile.jpg",
+    img: "/isah.png",
+    imgmobile: "isahmobile.png",
     role: "Product Manager",
     role2: "(Senior Level)",
     text: "Okpanachi is a trained Product Manager with 7+ years of experience across Fintech and Media & Communication industries, good eye for design, user/market research. Passionate about creating products that truly serve users while driving business growth.",
@@ -48,8 +48,8 @@ export const reviews = [
   },
   {
     name: "Beatrice Olajide",
-    img: "/talentthree.jpg",
-    imgmobile: "/talentthreemobile.jpg",
+    img: "/olajide.png",
+    imgmobile: "/olajidemobile.png",
     role: "Product Manager",
     role2: "(Senior Level)",
     text: "Beatrice is a goal driven product manager with over 3 years experience of leading cross functional teams, to deliver innovative and successful products.",
@@ -61,8 +61,8 @@ export const reviews = [
   },
   {
     name: "Osinachi Ekwueme",
-    img: "/talentfournew.jpeg",
-    imgmobile: "talentfournew1.jpg",
+    img: "/ekwueme.png",
+    imgmobile: "ekwuememobile.png",
     role: "Web Developer",
     role2: "(Senior Level)",
     text: "Osinachi is a highly skilled web developer with a passion for creating dynamic and user-friendly websites. With expertise in HTML, CSS, and JavaScript, he brings designs to life with precision and creativity. His proficiency in various programming languages and frameworks allows him to create robust solutions that meet client requirements.",
@@ -74,8 +74,8 @@ export const reviews = [
   },
   {
     name: "Precious Wilfred",
-    img: "/talentfive.jpeg",
-    imgmobile: "/talentfivemobile.jpg",
+    img: "/wilfred.png",
+    imgmobile: "/wilfredmobile.png",
     role: "Product Manager",
     role2: "(Senior Level)",
     text: "Precious is a result-driven product manager with experience in developing and launching successful products. Skilled in user research, product development, project management, and team collaboration. Background in leadership, management, mathematics, UX, customer service, and design.",
@@ -87,10 +87,10 @@ export const reviews = [
   },
   {
     name: "John Esan",
-    img: "/talentsix.jpg",
-    imgmobile: "/talentsixmobile.jpg",
+    img: "/esan.png",
+    imgmobile: "/esanmobile.png",
     role: "Product Manager",
-    role2: "(Junior Level)",
+    role2: "(Senior Level)",
     text: "John is a resourceful Product Manager with expertise in Product Strategy, Agile Project Management, Lending and Credit Solutions, Embedded Finance, and User Experience Design. Experienced in driving digital transformation by defining product roadmaps, building prototypes, and conducting user research to deliver viable solutions for financial institutions, technology startups, and social impact projects.",
     linkedin: "https://www.linkedin.com/in/john-esan/",
     hire: "Hire John",

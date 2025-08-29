@@ -4,35 +4,35 @@ const experts = [
   {
     name: "Sarah Ibeji",
     role: "Head of Product",
-    img: "/talentonemobile.jpg",
+    img: "/ibejimobile.png",
     imgbanner: "/flagmobile.png",
     style: "top-10 left-1/7 min-[460px]:left-1/4"
   },
   {
     name: "Okpanachi Isah",
     role: "Product Manager",
-    img: "/talenttwomobile.jpg",
+    img: "/isahmobile.png",
     imgbanner: "/penmobile.png",
     style: "top-15 left-7/12"
   },
   {
     name: "John Esan",
     role: "Product manager",
-    img: "/talentsixmobile.jpg",
+    img: "/esanmobile.png",
     imgbanner: "/penmobile.png",
     style: "bottom-16 left-7/12"
   },
   {
     name: "Osinachi Ekwueme",
     role: "Web Developer",
-    img: "/talentfournew1.jpg",
+    img: "/ekwuememobile.png",
     imgbanner: "/chatmobile.png",
     style: "bottom-8 min-[480px]:bottom-14 right-7/12 "
   },
   {
     name: "Beatrice Olajide",
     role: "Product manager",
-    img: "/talentthreemobile.jpg",
+    img: "/olajidemobile.png",
     imgbanner: "/chatmobile.png",
     style: "top-25 right-7/11 min-[480px]:right-61/100"
   }

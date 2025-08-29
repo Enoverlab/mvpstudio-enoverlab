@@ -6,7 +6,7 @@ const experts = [
   {
     name: "Sarah Ibeji",
     role: "Head of Product",
-    img: "/talentonemobile.jpg",
+    img: "/ibejimobile.png",
     imgbanner: "/flagmobile.png",
     hire: "Hire Sarah",
     style: "top-2 left-1/4"
@@ -14,7 +14,7 @@ const experts = [
   {
     name: "Okpanachi Isah",
     role: "Product Manager",
-    img: "/talenttwomobile.jpg",
+    img: "/isahmobile.png",
     imgbanner: "/penmobile.png",
     hire: "Hire Okpanachi",
     style: "top-20 left-7/11"
@@ -22,7 +22,7 @@ const experts = [
   {
     name: "John Esan",
     role: "Product manager",
-    img: "/talentsixmobile.jpg",
+    img: "/esanmobile.png",
     imgbanner: "/penmobile.png",
     hire: "Hire John",
     style: "bottom-16 left-7/11"
@@ -30,7 +30,7 @@ const experts = [
   {
     name: "Osinachi Ekwueme",
     role: "Web Developer",
-    img: "/talentfournew1.jpg",
+    img: "/ekwuememobile.png",
     imgbanner: "/chatmobile.png",
     hire: "Hire Osinachi",
     style: "-bottom-7 right-7/12 "
@@ -38,7 +38,7 @@ const experts = [
   {
     name: "Precious Wilfred",
     role: "Product manager",
-    img: "/talentfivemobile.jpg",
+    img: "/wilfredmobile.png",
     imgbanner: "/chatmobile.png",
     hire: "Hire Precious",
     style: "top-35 right-7/10"

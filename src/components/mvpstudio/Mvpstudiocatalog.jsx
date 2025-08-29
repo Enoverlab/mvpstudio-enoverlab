@@ -13,8 +13,12 @@ const Mvpstudiocatalog = () => {
   const [activeTab, setActiveTab] = useState("All Projects");
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const initialCategory = params.get('category') || categories[0];
+
+  // Get initial category from sessionStorage or query string or default
+  const sessionCategory = sessionStorage.getItem("catalogCategory");
+  const initialCategory = params.get('category') || sessionCategory || categories[0];
   const [activeCategory, setActiveCategory] = useState(initialCategory);
+
   const navigate = useNavigate();
 
   // Real-time fetch from Firestore
@@ -22,15 +26,36 @@ const Mvpstudiocatalog = () => {
     const unsub = onSnapshot(collection(db, "projects"), (snapshot) => {
       const arr = [];
       snapshot.forEach(doc => arr.push({ id: doc.id, ...doc.data() }));
-      //this will sort the projects by createdAt in descending order:
-          arr.sort((a, b) => {
-      if (!a.createdAt || !b.createdAt) return 0;
-      return b.createdAt.seconds - a.createdAt.seconds;
-    });
+      // Sort by createdAt descending
+      arr.sort((a, b) => {
+        if (!a.createdAt || !b.createdAt) return 0;
+        return b.createdAt.seconds - a.createdAt.seconds;
+      });
       setProjects(arr);
     });
     return unsub;
   }, []);
+
+  // Restore scroll position and active category on mount
+  useEffect(() => {
+    const savedCategory = sessionStorage.getItem("catalogCategory");
+    if (savedCategory && categories.includes(savedCategory)) {
+      setActiveCategory(savedCategory);
+    }
+    const savedScroll = sessionStorage.getItem("catalogScroll");
+    if (savedScroll) {
+      window.scrollTo(0, parseInt(savedScroll, 10));
+      sessionStorage.removeItem("catalogScroll");
+    }
+  }, []);
+
+  // Update URL query string when activeCategory changes
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    params.set('category', activeCategory);
+    navigate({ search: params.toString() }, { replace: true });
+    sessionStorage.setItem("catalogCategory", activeCategory);
+  }, [activeCategory, navigate, location.search]);
 
   // Updated filtering logic
   const filteredProjects = projects.filter((proj) => {
@@ -90,10 +115,15 @@ const Mvpstudiocatalog = () => {
                 <div className="flex-1 flex flex-col justify-center items-start mb-6 md:mb-0 md:mr-8">
                   <h3 className="font-semibold text-lg md:text-xl mb-2">{project.title && project.title + " ready for customization"}</h3>
                   <p className="text-sm md:text-base mb-6 text-[#222]"> {project.desc && project.desc.length > 150 ? project.desc.slice(0, 150) + "..." : project.desc} </p>
-                  {/*this truncates the description to show only 150 characters */}
+                  {/* Truncate description to 150 characters */}
                   <button
                     className="bg-[#2563eb] text-white px-6 py-2 rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#1051FF] transition"
-                    onClick={() => navigate(`/project/${activeTab}/${activeCategory}/${idx}`)}
+                    onClick={() => {
+                      // Save scroll and category before navigating
+                      sessionStorage.setItem("catalogScroll", window.scrollY);
+                      sessionStorage.setItem("catalogCategory", activeCategory);
+                      navigate(`/project/${activeTab}/${activeCategory}/${project.id}?category=${activeCategory}`);
+                    }}
                   >
                     Explore <span>&#8594;</span>
                   </button>

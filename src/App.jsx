@@ -54,7 +54,7 @@ const ProtectedRoute = ({ children }) => {
             <ProjectUploadForm />
           </ProtectedRoute>
         } />
-        <Route path='/project/:tab/:category/:idx' element={<ProjectDetails/>}/>
+        <Route path='/project/:tab/:category/:id' element={<ProjectDetails/>}/>
       </Routes>
     </Suspense>
     <ScrollToTop/>
