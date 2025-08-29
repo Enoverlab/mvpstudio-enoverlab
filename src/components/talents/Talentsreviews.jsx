@@ -49,7 +49,7 @@ const Talentsreviews = () => {
 
       <div className='md:px-25 lg:px-30 min-[1366px]:mx-10 relative'>
       <div
-      className="flex max-lg:flex-wrap lg:flex-row lg:overflow-x-auto justify-center gap-4 md:gap-5 lg:gap-6 xl:gap-10 mt-16 px-5 md:py-5 md:justify-around cursor-grab bg-transparent border-none lg:w-full hide-scrollbar">
+      className="flex max-lg:flex-wrap lg:flex-row lg:overflow-x-auto justify-center gap-2 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-10 mt-16 px-2 sm:px-5 md:py-5 md:justify-around cursor-grab bg-transparent border-none lg:w-full hide-scrollbar">
         {reviews.map((review, idx) => (
           <div
             key={idx}
@@ -60,7 +60,7 @@ const Talentsreviews = () => {
             tabIndex={0}
           >
             <img src={review.img} className='hidden object-cover w-20 h-30 rounded-full z-10 lg:flex lg:w-40  lg:h-60 lg:flex-shrink-0'/>
-            <img src={review.imgmobile} className='object-cover w-20 h-30 rounded-full z-10 flex lg:hidden lg:w-40  lg:h-60 lg:flex-shrink-0'/>
+            <img src={review.imgmobile} className='object-cover max-sm:w-24 max-sm:h-34 w-20 h-30 rounded-full z-10 flex lg:hidden lg:w-40  lg:h-60 lg:flex-shrink-0'/>
           </div>
         ))}
       </div>

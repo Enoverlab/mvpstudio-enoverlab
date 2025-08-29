@@ -62,7 +62,7 @@ export const reviews = [
   {
     name: "Osinachi Ekwueme",
     img: "/ekwueme.png",
-    imgmobile: "ekwuememobile.png",
+    imgmobile: "ekwuememobile1.png",
     role: "Web Developer",
     role2: "(Senior Level)",
     text: "Osinachi is a highly skilled web developer with a passion for creating dynamic and user-friendly websites. With expertise in HTML, CSS, and JavaScript, he brings designs to life with precision and creativity. His proficiency in various programming languages and frameworks allows him to create robust solutions that meet client requirements.",
