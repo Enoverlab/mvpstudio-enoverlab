@@ -6,21 +6,24 @@ const experts = [
     role: "Head of Product",
     img: "/ibejimobile.png",
     imgbanner: "/flagmobile.png",
-    style: "top-10 left-1/7 min-[460px]:left-1/4"
+    style: "top-10 left-1/7 min-[460px]:left-1/4",
+    styleimg: "bg-yellow-500"
   },
   {
     name: "Okpanachi Isah",
     role: "Product Manager",
     img: "/isahmobile.png",
     imgbanner: "/penmobile.png",
-    style: "top-15 left-7/12"
+    style: "top-15 left-7/12",
+    styleimg: "bg-blue-600"
   },
   {
     name: "John Esan",
     role: "Product manager",
     img: "/esanmobile.png",
     imgbanner: "/penmobile.png",
-    style: "bottom-16 left-7/12"
+    style: "bottom-16 left-7/12",
+    styleimg: "bg-gray-500"
   },
   {
     name: "Osinachi Ekwueme",
@@ -34,7 +37,8 @@ const experts = [
     role: "Product manager",
     img: "/olajidemobile.png",
     imgbanner: "/chatmobile.png",
-    style: "top-25 right-7/11 min-[480px]:right-61/100"
+    style: "top-25 right-7/11 min-[480px]:right-61/100",
+    styleimg: "bg-orange-500"
   }
 ];
 
@@ -163,7 +167,7 @@ const Meettheexpertsmobile = () => {
               <img
                 src={expert.img}
                 alt={expert.name}
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-white shadow-lg"
+                className={`w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-white shadow-lg ${expert.styleimg}`}
               />
               <div className={`bg-white rounded-xl shadow-md px-2 py-1 md:px-4 md:py-2 text-left ${isLeft ? 'mr-1' : 'ml-1'} flex-1 flex flex-row p-5 gap-1 mb-10`}>
                 <img src={expert.imgbanner} className='h-1/2'/>

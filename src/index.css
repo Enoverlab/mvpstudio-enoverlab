@@ -42,6 +42,18 @@
         #ccc9d6 50%
     );
 
+    --talentsreviewgradient: linear-gradient(
+        250deg,
+        #4edbe2 30%,
+        #c4c0cf 50%
+    );
+
+    --talentsreviewgradientmobile: linear-gradient(
+        250deg,
+        #d9dce9 30%,
+        #c9c8ce 50%
+    );
+
 
     --swiper-button-next: url('/arrowright.svg');
       
@@ -114,6 +126,14 @@ body{
 
 .mvpuploadgradient{
     background: var(--mvpuploadgradient);
+}
+
+.talentsreviewgradient {
+    background: var(--talentsreviewgradient);
+}
+
+.talentsreviewgradientmobile {
+    background: var(--talentsreviewgradientmobile);
 }
 
 @media screen and (max-width: 768px) {

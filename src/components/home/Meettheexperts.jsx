@@ -9,7 +9,8 @@ const experts = [
     img: "/ibejimobile.png",
     imgbanner: "/flagmobile.png",
     hire: "Hire Sarah",
-    style: "top-2 left-1/4"
+    style: "top-2 left-1/4",
+    styleimg: "bg-yellow-500"
   },
   {
     name: "Okpanachi Isah",
@@ -17,15 +18,17 @@ const experts = [
     img: "/isahmobile.png",
     imgbanner: "/penmobile.png",
     hire: "Hire Okpanachi",
-    style: "top-20 left-7/11"
+    style: "top-20 left-7/11",
+    styleimg: "bg-blue-600"
   },
   {
-    name: "John Esan",
-    role: "Product manager",
-    img: "/esanmobile.png",
+    name: "Omang Thomas",
+    role: "Product designer",
+    img: "/omangmobile.png",
     imgbanner: "/penmobile.png",
-    hire: "Hire John",
-    style: "bottom-16 left-7/11"
+    hire: "Hire Omang",
+    style: "bottom-16 left-7/11",
+    styleimg: "bg-gray-500"
   },
   {
     name: "Osinachi Ekwueme",
@@ -41,7 +44,8 @@ const experts = [
     img: "/wilfredmobile.png",
     imgbanner: "/chatmobile.png",
     hire: "Hire Precious",
-    style: "top-35 right-7/10"
+    style: "top-35 right-7/10",
+    styleimg: "bg-orange-600"
   }
 ];
 
@@ -179,7 +183,7 @@ const Meettheexperts = () => {
               <img
                 src={expert.img}
                 alt={expert.name}
-                className="w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-white shadow-xl"
+                className={`w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-white shadow-xl ${expert.styleimg}`}
               />
               <div className={`bg-white rounded-xl shadow-xl px-2 py-1 md:px-4 md:py-2 text-left ${isLeft ? 'mr-1' : 'ml-1'} flex-1 flex flex-row p-5 gap-1 mb-20`}>
                 <img src={expert.imgbanner} className='h-1/2'/>

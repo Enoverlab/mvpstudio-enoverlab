@@ -65,7 +65,7 @@ export const reviews = [
     imgmobile: "ekwuememobile1.png",
     role: "Web Developer",
     role2: "(Senior Level)",
-    text: "Osinachi is a highly skilled web developer with a passion for creating dynamic and user-friendly websites. With expertise in HTML, CSS, and JavaScript, he brings designs to life with precision and creativity. His proficiency in various programming languages and frameworks allows him to create robust solutions that meet client requirements.",
+    text: "Osinachi is a highly skilled web developer with a passion for creating dynamic and user-friendly websites. With expertise in HTML, CSS, and JavaScript, he brings designs to life with precision and creativity. His proficiency in various programming languages and frameworks, build tools, state managements, API calls and security integration allows him to create robust solutions that meet client requirements.",
     hire: "Hire Osinachi",
     instagram: "https://www.instagram.com/sinabenedict?igsh=MTVkeXV3NWEwdDdreA%3D%3D&utm_source=qr",
     linkedin: "http://linkedin.com/in/osinachi-ekwueme-b38453184",
@@ -83,6 +83,7 @@ export const reviews = [
     instagram: "https://www.instagram.com/preciouswilfred_pc?igsh=MWc5bGIyNGVrNHY3Yg==",
     linkedin: "https://www.linkedin.com/in/precious-wilfred-579b31201",
     x: "https://x.com/presh_wilfred?t=iHfK2Jlt_os_CsN08Tmrkg&s=09",
+    whatsapp: "https://wa.me/2349121487835",
     style: "bg-black pl-2"
   },
   {
@@ -96,4 +97,17 @@ export const reviews = [
     hire: "Hire John",
     style: "bg-black pl-2"
   },
+  {
+    name: "Omang Thomas",
+    img: "/omang.png",
+    imgmobile: "/omangmobile.png",
+    role: "Product Designer",
+    role2: "(Senior Level)",
+    text: "Omang is a passionate UI/UX designer with over three years of experience crafting intuitive, user-centered digital experiences. He specializes in creating visually engaging interfaces and seamless user journeys, blending creativity with data-driven insights. Proficient in tools like Figma, Sketch, and Adobe XD; worked on projects ranging from mobile apps to web platforms, collaborating with cross-functional teams to deliver impactful designs. His focus is on solving user problems while aligning with business goals, always striving for clean, accessible, and delightful interfaces.",
+    linkedin: "https://www.linkedin.com/in/omang-thomas-a6519b228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    x: "https://x.com/thomasomang?s=11",
+    whatsapp: "https://wa.me/2349055584700",
+    hire: "Hire Omang",
+    style: "bg-black pl-2"
+  }
 ];

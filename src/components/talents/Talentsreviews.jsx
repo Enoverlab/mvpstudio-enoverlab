@@ -59,8 +59,10 @@ const Talentsreviews = () => {
             `}
             tabIndex={0}
           >
+            <div className='flex flex-row talentsreviewgradientmobile rounded-full'>
             <img src={review.img} className='hidden object-cover w-20 h-30 rounded-full z-10 lg:flex lg:w-40  lg:h-60 lg:flex-shrink-0'/>
             <img src={review.imgmobile} className='object-cover max-sm:w-24 max-sm:h-34 w-20 h-30 rounded-full z-10 flex lg:hidden lg:w-40  lg:h-60 lg:flex-shrink-0'/>
+            </div>
           </div>
         ))}
       </div>

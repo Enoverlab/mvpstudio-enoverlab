@@ -14,7 +14,7 @@ const Mvpstudiocatalog = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
 
-  // Get initial category from sessionStorage or query string or default
+  // Get initial category from query string, sessionStorage, or default
   const sessionCategory = sessionStorage.getItem("catalogCategory");
   const initialCategory = params.get('category') || sessionCategory || categories[0];
   const [activeCategory, setActiveCategory] = useState(initialCategory);
@@ -36,26 +36,45 @@ const Mvpstudiocatalog = () => {
     return unsub;
   }, []);
 
-  // Restore scroll position and active category on mount
+  // Restore scroll position after projects are loaded
+  useEffect(() => {
+    if (projects.length > 0) {
+      const savedScroll = sessionStorage.getItem("catalogScroll");
+      if (savedScroll) {
+        window.scrollTo(0, parseInt(savedScroll, 10));
+        sessionStorage.removeItem("catalogScroll");
+      }
+    }
+  }, [projects]);
+
+  // Restore active category on mount (keep this separate)
   useEffect(() => {
     const savedCategory = sessionStorage.getItem("catalogCategory");
     if (savedCategory && categories.includes(savedCategory)) {
       setActiveCategory(savedCategory);
     }
-    const savedScroll = sessionStorage.getItem("catalogScroll");
-    if (savedScroll) {
-      window.scrollTo(0, parseInt(savedScroll, 10));
-      sessionStorage.removeItem("catalogScroll");
-    }
   }, []);
 
   // Update URL query string when activeCategory changes
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
+  const params = new URLSearchParams(location.search);
+  if (params.get('category') !== activeCategory) {
     params.set('category', activeCategory);
     navigate({ search: params.toString() }, { replace: true });
-    sessionStorage.setItem("catalogCategory", activeCategory);
-  }, [activeCategory, navigate, location.search]);
+  }
+  sessionStorage.setItem("catalogCategory", activeCategory);
+  // eslint-disable-next-line
+}, [activeCategory]);
+
+  // Always prioritize query string for category when it changes
+  useEffect(() => {
+  const params = new URLSearchParams(location.search);
+  const queryCategory = params.get('category');
+  if (queryCategory && categories.includes(queryCategory) && queryCategory !== activeCategory) {
+    setActiveCategory(queryCategory);
+  }
+  // eslint-disable-next-line
+}, [location.search]);
 
   // Updated filtering logic
   const filteredProjects = projects.filter((proj) => {
