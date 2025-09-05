@@ -47,9 +47,9 @@ const Talentsreviews = () => {
                 <img src="/talentsbg.png" className='sm:hidden w-full h-auto object-cover absolute top-50 left-0 z-1' />
 
 
-      <div className='md:px-25 lg:px-30 min-[1366px]:mx-10 relative'>
+      <div className='md:px-10 lg:px-30 min-[1366px]:mx-10 relative'>
       <div
-      className="flex max-lg:flex-wrap lg:flex-row lg:overflow-x-auto justify-center gap-2 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-10 mt-16 px-2 sm:px-5 md:py-5 md:justify-around cursor-grab bg-transparent border-none lg:w-full hide-scrollbar">
+      className="flex max-lg:flex-wrap lg:flex-row lg:overflow-x-auto justify-center gap-2 sm:gap-4 lg:gap-6 xl:gap-10 mt-16 px-2 sm:max-md:px-5 md:py-5 md:justify-around cursor-grab bg-transparent border-none lg:w-full hide-scrollbar">
         {reviews.map((review, idx) => (
           <div
             key={idx}
@@ -61,7 +61,7 @@ const Talentsreviews = () => {
           >
             <div className='flex flex-row talentsreviewgradientmobile rounded-full'>
             <img src={review.img} className='hidden object-cover w-20 h-30 rounded-full z-10 lg:flex lg:w-40  lg:h-60 lg:flex-shrink-0'/>
-            <img src={review.imgmobile} className='object-cover max-sm:w-24 max-sm:h-34 w-20 h-30 rounded-full z-10 flex lg:hidden lg:w-40  lg:h-60 lg:flex-shrink-0'/>
+            <img src={review.imgmobile} className='object-cover max-sm:w-24 max-sm:h-34 w-20 h-30 rounded-full z-10 flex lg:hidden lg:w-40 lg:h-60 lg:flex-shrink-0'/>
             </div>
           </div>
         ))}
@@ -72,7 +72,7 @@ const Talentsreviews = () => {
         <p className='italic text-sm'>Scroll...</p>
         </div>
       </div>
-      <div className='flex flex-col justify-center mx-auto mt-5 lg:mt-15 w-full sm:w-2/3 lg:w-1/3 gap-3 max-md:p-8 md:gap-5 mb-15 md:mb-30'>
+      <div className='flex flex-col justify-center mx-auto mt-5 lg:mt-15 w-full sm:w-2/3 lg:w-1/3 gap-3 max-md:p-8 md:gap-5 mb-15 md:mb-30 z-1000'>
         <div className='flex flex-row gap-3 md:gap-5 md:text-center md:items-center md:mx-auto'>
             <img src='/reviewquotes.png' className='w-7 h-7 sm:w-15 sm:h-15'/>
             <h1 className='font-semibold text-lg'>{reviews[activeIndex].name}<br/><span className='text-base font-normal'>{reviews[activeIndex].role}</span><br/><span className='font-light text-xs'>{reviews[activeIndex].role2}</span></h1>
