@@ -42,7 +42,7 @@ const Servicessection = () => {
                 <div className=" flex flex-row gap-4 w-full">
                   <div className='flex flex-col lg:p-15 w-full max-md:hidden md:w-1/2 gap-4'>
                   <img src='/iconone.png' className='w-14 h-14'/>
-                  <h1 className='font-bold'>UI/UX Design</h1>
+                  <h1 className='font-bold text-lg md:text-2xl lg:text-3xl'>UI/UX Design</h1>
                   <p className='text-sm md:text-base'>We combine creativity with strategy through branding, web design, and UI/UX design, to create designs that pass your message effectively and elevate your brand's visual impression.</p>
                   <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 cursor-pointer py-2 rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
@@ -61,9 +61,9 @@ const Servicessection = () => {
                  }}>
                     <div className='absolute inset-0 flex items-center justify-center p-5 md:hidden'>
                   <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/80 to-[#F9ECF5]/85'>
-                  <div className='flex flex-col p-7 w-full md:hidden md:w-1/2 gap-4'>
+                  <div className='flex flex-col p-5 w-full md:hidden md:w-1/2 gap-4'>
                   <img src='/iconone.png' className='w-14 h-14'/>
-                  <h1 className='font-bold'>UI/UX Design</h1>
+                  <h1 className='font-bold text-lg'>UI/UX Design</h1>
                   <p className='text-sm md:text-base'>We combine creativity with strategy through branding, web design, and UI/UX design, to create designs that pass your message effectively and elevate your brand's visual impression.</p>
                   <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
@@ -91,7 +91,7 @@ const Servicessection = () => {
                   </div>
                   <div className='flex flex-col lg:p-15 w-full max-md:hidden md:w-1/2 gap-4 text-end items-end'>
                   <img src='/icontwo.png' className='w-14 h-14'/>
-                  <h1 className='font-bold'>Web Development</h1>
+                  <h1 className='font-bold text-lg md:text-2xl lg:text-3xl'>Web Development</h1>
                   <p className='text-sm md:text-base'>We create custom websites and web applications that fit your business needs. Our team uses the latest technology to make your site look good and work perfectly on any device.</p>
                   <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
@@ -108,9 +108,9 @@ const Servicessection = () => {
                  }}>
                     <div className='absolute inset-0 flex items-center justify-center p-5 md:hidden'>
                   <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/80 to-[#F9ECF5]/85'>
-                  <div className='flex flex-col p-7 w-full md:hidden md:w-1/2 gap-4'>
+                  <div className='flex flex-col p-5 w-full md:hidden md:w-1/2 gap-4'>
                   <img src='/icontwo.png' className='w-14 h-14'/>
-                  <h1 className='font-bold'>Web Development</h1>
+                  <h1 className='font-bold text-lg'>Web Development</h1>
                   <p className='text-sm md:text-base'>We create custom websites and web applications that fit your business needs. Our team uses the latest technology to make your site look good and work perfectly on any device.</p>
                   <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
@@ -135,7 +135,7 @@ const Servicessection = () => {
                 <div className=" flex flex-row gap-4 w-full">
                   <div className='flex flex-col lg:p-15 w-full max-md:hidden md:w-1/2 gap-4'>
                   <img src='/iconthree.png' className='w-14 h-14'/>
-                  <h1 className='font-bold'>Product Management</h1>
+                  <h1 className='font-bold text-lg md:text-2xl lg:text-3xl'>Product Management</h1>
                   <p className='text-sm md:text-base'>We take your product idea and turn it into reality, handling everything from design and engineering to testing and launch. We give attention to all processes involved in building a great product.</p>
                   <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
@@ -154,9 +154,9 @@ const Servicessection = () => {
                  }}>
                     <div className='absolute inset-0 flex items-center justify-center p-5 md:hidden'>
                   <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/80 to-[#F9ECF5]/85'>
-                  <div className='flex flex-col p-7 w-full md:hidden md:w-1/2 gap-4'>
+                  <div className='flex flex-col p-5 w-full md:hidden md:w-1/2 gap-4'>
                   <img src='/iconthree.png' className='w-14 h-14'/>
-                  <h1 className='font-bold'>Product Management</h1>
+                  <h1 className='font-bold text-lg'>Product Management</h1>
                   <p className='text-sm md:text-base'>We take your product idea and turn it into reality, handling everything from design and engineering to testing and launch. We give attention to all processes involved in building a great product.</p>
                   <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>

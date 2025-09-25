@@ -100,7 +100,7 @@ const Navbarwhite = () => {
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><NavLink to="/mvpstudio" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600 lg:text-indigo-900' : ''}`}>MVP Studio</NavLink></li>
          </ul>
-         <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 cursor-pointer bg-[#1A2DB3] text-white hover:bg-white hover:text-[#1A2DB3] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
+         <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 cursor-pointer bg-[#1A2DB3] text-white hover:bg-[#2563EB] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
          <button 
            className="block cursor-pointer lg:hidden"
            onClick={() => setIsOpen(!isOpen)}>
