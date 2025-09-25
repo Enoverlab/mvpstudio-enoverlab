@@ -9,13 +9,15 @@ import Infinityslider from './components/services/Infinityslider'
 const Services = () => {
   return (
     <>
-    <section className='overflow-x-hidden'>
+    <section>
+      <div className='overflow-hidden'>
         <Navbar/>
         <Heronew/>
         <Servicessection/>
         <Somethinggreat/>
         <Infinityslider/>
         <Footer/>
+        </div>
     </section>
     </>
   )

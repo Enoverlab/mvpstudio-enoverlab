@@ -60,7 +60,7 @@ const Servicessection = () => {
                 backgroundPosition: 'center center',
                  }}>
                     <div className='absolute inset-0 flex items-center justify-center p-5 md:hidden'>
-                  <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/89 to-[#F9ECF5]/90'>
+                  <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/80 to-[#F9ECF5]/85'>
                   <div className='flex flex-col p-7 w-full md:hidden md:w-1/2 gap-4'>
                   <img src='/iconone.png' className='w-14 h-14'/>
                   <h1 className='font-bold'>UI/UX Design</h1>
@@ -107,13 +107,13 @@ const Servicessection = () => {
                 backgroundPosition: 'center center',
                  }}>
                     <div className='absolute inset-0 flex items-center justify-center p-5 md:hidden'>
-                  <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/89 to-[#F9ECF5]/90'>
+                  <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/80 to-[#F9ECF5]/85'>
                   <div className='flex flex-col p-7 w-full md:hidden md:w-1/2 gap-4'>
                   <img src='/icontwo.png' className='w-14 h-14'/>
                   <h1 className='font-bold'>Web Development</h1>
                   <p className='text-sm md:text-base'>We create custom websites and web applications that fit your business needs. Our team uses the latest technology to make your site look good and work perfectly on any device.</p>
                   <Link to='/contact'>
-                  <button className='bg-[#2563eb] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
+                  <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
                   </Link>
                   </div>
                   </span>
@@ -153,7 +153,7 @@ const Servicessection = () => {
                 backgroundPosition: 'center center',
                  }}>
                     <div className='absolute inset-0 flex items-center justify-center p-5 md:hidden'>
-                  <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/89 to-[#F9ECF5]/90'>
+                  <span className='flex flex-col p-4 bg-gradient-to-r from-[#DEECFF]/80 to-[#F9ECF5]/85'>
                   <div className='flex flex-col p-7 w-full md:hidden md:w-1/2 gap-4'>
                   <img src='/iconthree.png' className='w-14 h-14'/>
                   <h1 className='font-bold'>Product Management</h1>
