@@ -16,7 +16,7 @@ const Testimonials = () => {
       damping: 20,
     }}
       className='flex flex-col gap-1 justify-center items-center px-10 text-center'>
-        <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
+        <div className='flex flex-row bg-[#1A2DB3] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
           <img src='/testimonials.png' className='w-4 mr-2 h-[19px] leading-1.5' />
           Testimonials
         </div>

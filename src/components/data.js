@@ -111,3 +111,4 @@ export const reviews = [
     style: "bg-black pl-2"
   }
 ];
+

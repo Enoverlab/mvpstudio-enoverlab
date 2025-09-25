@@ -69,7 +69,7 @@ const Login = () => {
                 />
                 <button
                   type="button"
-                  className="absolute right-3 top-2 text-xs text-[#2563eb] hover:underline"
+                  className="absolute right-3 top-2 cursor-pointer text-xs text-[#2563eb] hover:underline"
                   onClick={() => setShowPassword((v) => !v)}
                   tabIndex={-1}
                 >
@@ -82,7 +82,7 @@ const Login = () => {
             )}
             <button
                                       type="submit"
-                                      className="bg-[#2563eb] text-white rounded-lg py-3 font-semibold text-base hover:bg-[#1051FF] transition" disabled={isAuthenticating}
+                                      className="bg-[#2563eb] text-white rounded-lg cursor-pointer py-3 font-semibold text-base hover:bg-[#2563EB] transition" disabled={isAuthenticating}
                                     >{isAuthenticating ? "Authenticating..." : "Login"}<span className="inline-block"></span>
                                     </button>
           </form>

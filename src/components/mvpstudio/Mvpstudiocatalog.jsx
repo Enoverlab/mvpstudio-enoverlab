@@ -93,7 +93,7 @@ const Mvpstudiocatalog = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2 rounded-lg font-medium text-[10px] sm:text-sm md:text-base transition ${
+            className={`px-6 py-2 rounded-lg font-medium cursor-pointer text-[10px] sm:text-sm md:text-base transition ${
               activeTab === tab
                 ? "bg-[#222] text-white shadow"
                 : "bg-[#f7fafd] text-[#222] hover:bg-[#ececec]"
@@ -109,7 +109,7 @@ const Mvpstudiocatalog = () => {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-1 text-xs md:text-sm whitespace-pre ${
+            className={`px-4 py-1 text-xs cursor-pointer md:text-sm whitespace-pre ${
               activeCategory === cat
                 ? "text-[#222] border-b border-[#222]"
                 : "text-[#8a8484] hover:text-[#222]"
@@ -136,7 +136,7 @@ const Mvpstudiocatalog = () => {
                   <p className="text-sm md:text-base mb-6 text-[#222]"> {project.desc && project.desc.length > 150 ? project.desc.slice(0, 150) + "..." : project.desc} </p>
                   {/* Truncate description to 150 characters */}
                   <button
-                    className="bg-[#2563eb] text-white px-6 py-2 rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#1051FF] transition"
+                    className="bg-[#1A2DB3] text-white cursor-pointer px-6 py-2 rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition"
                     onClick={() => {
                       // Save scroll and category before navigating
                       sessionStorage.setItem("catalogScroll", window.scrollY);

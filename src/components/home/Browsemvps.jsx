@@ -17,7 +17,7 @@ const Browsemvps = () => {
       damping: 20,
     }}
         className='flex flex-col gap-1 justify-center items-center px-10 text-center'>
-            <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[164px] h-[31px] text-white text-base leading-6 rounded-2xl'><img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5'/>Browse MVPs</div>
+            <div className='flex flex-row bg-[#1A2DB3] justify-center items-center w-[164px] h-[31px] text-white text-base leading-6 rounded-2xl'><img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5'/>Browse MVPs</div>
             <div className='text-[24px] md:text-[36px] text-[#111216] text-center max-md:hidden font-medium'>Validated MVPs ready for adoption <br/> and optimization</div>
             <div className='text-[24px] md:text-[36px] text-[#111216] text-center md:hidden leading-7'>Validated MVPs ready for adoption and optimization</div>
             <div className='text-[14px] md:text-base text-[#595C63]'>Explore our catalogue of tested and ready to use products</div>
@@ -87,7 +87,7 @@ const Browsemvps = () => {
                     </div>
                 </motion.div>
 
-            <div className='flex justify-center'><Link to='/mvpstudio'><button className='bg-[#1051FF] w-[129px] h-[33px] text-[#FFFFFF] rounded-2xl hover:bg-white hover:text-[#1051FF] hover:ring-1 hover:ring-white'>See All<MdArrowOutward className='inline-block mb-2 mx-2'/></button></Link></div>
+            <div className='flex justify-center'><Link to='/mvpstudio'><button className='bg-[#1A2DB3] w-[129px] h-[33px] text-[#FFFFFF] cursor-pointer rounded-2xl hover:bg-white hover:text-[#1A2DB3] hover:ring-1 hover:ring-white'>See All<MdArrowOutward className='inline-block mb-2 mx-2'/></button></Link></div>
             </div>
     </section>
     </>

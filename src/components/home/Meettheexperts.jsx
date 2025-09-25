@@ -122,7 +122,7 @@ const Meettheexperts = () => {
       damping: 20,
     }}
       className='flex flex-col gap-1 justify-center items-center px-10 text-center mb-10'>
-        <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
+        <div className='flex flex-row bg-[#1A2DB3] justify-center items-center w-[169px] h-[31px] text-white text-base leading-6 rounded-2xl'>
           <img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5' alt="icon" />
           Meet The Team
         </div>
@@ -191,7 +191,7 @@ const Meettheexperts = () => {
                 <div className="font-semibold text-[#111216] text-[14px]">{expert.name}</div>
                 <div className="text-[10px] xl:text-[14px] text-[#595C63]">{expert.role}</div>
                 <Link to='talentsform'><button 
-                className="mt-1 text-[10px] text-[#1051FF] bg-[#F3F3FF] rounded-2xl shadow-xl w-[80%] py-0.5 md:py-1 hover:text-white hover:bg-[#1051FF]">{expert.hire}</button></Link>
+                className="mt-1 text-[10px] text-[#1A2DB3] bg-[#F3F3FF] rounded-2xl shadow-xl w-[80%] cursor-pointer py-0.5 md:py-1 hover:text-white hover:bg-[#2563EB]">{expert.hire}</button></Link>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@ const Meettheexperts = () => {
       damping: 20,
     }}
         className='w-[35%] flex flex-col pr-5 xl:px-2 gap-7 max-lg:hidden mt-15 xl:mt-25 xl:pr-7'>
-        <h1 className='text-[#12141D] text-[36px] font-semibold underline decoration-[#1051FF]'>Organize & prioritize all your work with our team</h1>
+        <h1 className='text-[#12141D] text-[36px] font-semibold underline decoration-[#1A2DB3]'>Organize & prioritize all your work with our team</h1>
         <p className='text-[16px] font-medium'>Sort out the most important and urgent tasks & concentrate on them first  base your priorities</p>
         <p className='text-[14px] text-black'>Multi-voting helps a committee or group narrow down a large number of items into just a few items on which to focus & similar to multi-voting, this approach.</p>
         </motion.div>

@@ -226,11 +226,11 @@ const ProjectUploadForm = () => {
             <input name="facebook" placeholder="Expert's facebook account link" value={expert.facebook} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
             <input name="x" placeholder="Expert's X(twitter) account link" value={expert.x} onChange={e => handleExpertChange(idx, e)} className="border p-1 rounded" />
             {form.experts.length > 1 && (
-              <button type="button" onClick={() => removeExpert(idx)} className="text-red-500 text-xs">Remove</button>
+              <button type="button" onClick={() => removeExpert(idx)} className="text-red-500 text-xs cursor-pointer">Remove</button>
             )}
           </div>
         ))}
-        <button type="button" onClick={addExpert} className="bg-blue-100 px-2 py-1 rounded text-blue-700 text-xs mt-1">Add Expert</button>
+        <button type="button" onClick={addExpert} className="bg-blue-100 px-2 py-1 rounded text-blue-700 text-xs cursor-pointer mt-1">Add Expert</button>
       </div>
       <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer" disabled={uploading}>
         {uploading ? "Uploading..." : "Upload Project"}

@@ -10,7 +10,7 @@ const Meetourfounder = () => {
         backgroundRepeat: 'no-repeat',
     }}
     >
-        <div className=' flex flex-row bg-[#1051FF] justify-center items-center w-[220px] h-[29px] sm:w-[250px] md:w-[280px] text-white font-semibold md:font-medium text-base sm:text-lg text-center leading-6 rounded-2xl mx-auto'>
+        <div className=' flex flex-row bg-[#1A2DB3] justify-center items-center w-[220px] h-[29px] sm:w-[250px] md:w-[280px] text-white font-semibold md:font-medium text-base sm:text-lg text-center leading-6 rounded-2xl mx-auto'>
         
           <img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5' />
           Meet Our Founder

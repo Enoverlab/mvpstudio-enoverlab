@@ -136,7 +136,7 @@ const TalentsForm = () => {
           <button
             type="button"
             onClick={handleDropdownSelect}
-            className="border rounded-md px-3 py-2 text-sm w-full text-left flex justify-between items-center bg-white"
+            className="border cursor-pointer rounded-md px-3 py-2 text-sm w-full text-left flex justify-between items-center bg-white"
           >
             {selectedRoles.length > 0
               ? selectedRoles.join(", ")
@@ -155,7 +155,7 @@ const TalentsForm = () => {
               <div className="absolute left-0 top-3 w-[97%] ml-[1.5%] bg-white rounded-xl shadow-lg z-50 p-4 flex flex-col gap-3">
                 <button
                   type="button"
-                  className="absolute top-2 right-3 text-xl text-gray-400"
+                  className="absolute cursor-pointer top-2 right-3  text-xl text-gray-400"
                   onClick={() => setDropdownOpen(false)}
                   aria-label="Close"
                 >
@@ -199,7 +199,7 @@ const TalentsForm = () => {
         />
         <button
           type="submit"
-          className="bg-[#2563eb] text-white rounded-md py-3 font-medium text-base mt-2 hover:bg-[#1051FF] transition inline-block" disabled={isSending}
+          className="bg-[#2563eb] text-white rounded-md cursor-pointer py-3 font-medium text-base mt-2 hover:bg-[#2563EB] transition inline-block" disabled={isSending}
         >{isSending ? "Sending..." : "Send Message"}<span className="inline-block"><MdArrowOutward/></span>
         </button>
       </form>
@@ -222,7 +222,7 @@ const TalentsForm = () => {
                 <p className="text-gray-800 mb-4 font-medium italic">Our team is working on your request..</p>
                <button
                   onClick={() => setIsSubmitted(false)} // Close popup
-                  className="bg-blue-950 text-white px-4 py-2 rounded hover:bg-black max-md:text-sm"
+                  className="bg-blue-950 cursor-pointer text-white px-4 py-2 rounded hover:bg-black max-md:text-sm"
                 >
                   Close
                 </button>

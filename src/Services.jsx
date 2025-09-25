@@ -1,16 +1,20 @@
 import React from 'react'
-import Hero from './components/services/Hero'
 import Somethinggreat from './components/home/Somethinggreat'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Heronew from './components/services/Heronew'
+import Servicessection from './components/services/Servicessection'
+import Infinityslider from './components/services/Infinityslider'
 
 const Services = () => {
   return (
     <>
-    <section>
+    <section className='overflow-x-hidden'>
         <Navbar/>
-        <Hero/>
+        <Heronew/>
+        <Servicessection/>
         <Somethinggreat/>
+        <Infinityslider/>
         <Footer/>
     </section>
     </>

@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from 'react'
 import { MdMenu, MdMenuOpen } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion'
-import { IoIosArrowDown } from 'react-icons/io';
+// import { IoIosArrowDown } from 'react-icons/io';
 
 
 const Navbarwhite = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+    // const [dropdownOpen, setDropdownOpen] = useState(false);
  const [isOpen, setIsOpen] = useState(false);
          const menuRef = useRef(null);
          const dropRef = useRef(null);
@@ -42,15 +42,15 @@ const Navbarwhite = () => {
        return () => document.removeEventListener('mousedown', handleClickOutside);
      }, []);
 
-     useEffect(() => {
-           const handleClickOutside = (event) => {
-             if (dropRef.current && !dropRef.current.contains(event.target)) {
-               setDropdownOpen(false);
-             }
-           };
-           document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
+    //  useEffect(() => {
+    //        const handleClickOutside = (event) => {
+    //          if (dropRef.current && !dropRef.current.contains(event.target)) {
+    //            setDropdownOpen(false);
+    //          }
+    //        };
+    //        document.addEventListener('mousedown', handleClickOutside);
+    //   return () => document.removeEventListener('mousedown', handleClickOutside);
+    // }, []);
    return (
      <motion.nav
      initial={{ y: -100 }}
@@ -70,26 +70,28 @@ const Navbarwhite = () => {
          >
            <li className={`block ${isOpen ? "pt-10" : "max-lg:hidden"} pt-2 justify-between 
                   text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/">Home</Link></li>
+                  <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
+                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/services">Services</Link></li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
              text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} 
-             ref={dropRef}
+            //  ref={dropRef}
            >
              <NavLink to="/about" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600 lg:text-indigo-900' : ''}`}>About Us</NavLink>
              {/* Dropdown Button */}
-             <div className='inline-block ml-1'>
+             {/* <div className='inline-block ml-1'>
                <button
                  className="cursor-pointer lg:block relative"
                  onClick={() => setDropdownOpen((open) => !open)}
                >
                  <IoIosArrowDown />
                </button>
-             </div>
+             </div> */}
              {/* Dropdown Section */}
-             {dropdownOpen && (
+             {/* {dropdownOpen && (
                <ul className='lg:absolute lg:top-14 lg:left-[40%] bg-white shadow-lg rounded-lg p-4 z-50 duration-500 hover:text-indigo-900 text-sm text-black'>
                  <NavLink to="/services" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Serivces</NavLink>
                </ul>
-             )}
+             )} */}
            </li>
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><Link to="/talents">Talents</Link></li>
@@ -98,7 +100,7 @@ const Navbarwhite = () => {
            <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                  text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-white max-lg:hover:text-cyan-200`} ><NavLink to="/mvpstudio" className={({ isActive }) => ` hover:text-indigo-900 ${isActive ? 'text-indigo-600 lg:text-indigo-900' : ''}`}>MVP Studio</NavLink></li>
          </ul>
-         <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 bg-[#1051FF] text-white hover:bg-white hover:text-[#1051FF] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
+         <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 cursor-pointer bg-[#1A2DB3] text-white hover:bg-white hover:text-[#1A2DB3] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
          <button 
            className="block cursor-pointer lg:hidden"
            onClick={() => setIsOpen(!isOpen)}>

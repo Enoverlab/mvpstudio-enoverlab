@@ -79,7 +79,7 @@ const Talentsreviews = () => {
         </div>
         <p className='text-sm md:text-center text-black'>{reviews[activeIndex].text}</p>
         <div className='flex flex-row gap-2 md:gap-2 md:justify-center md:items-center'>
-            <Link to='/talentsform'><span className="text-[10px] md:text-sm text-[#1051FF] bg-[#DFDFEE] rounded-lg w-[200px] py-1 md:py-1 lg:py-2 hover:text-white text-center hover:bg-[#1051FF] inline-block">{reviews[activeIndex].hire}</span></Link>
+            <Link to='/talentsform'><span className="text-[10px] md:text-sm text-[#1A2DB3] bg-[#DFDFEE] rounded-lg w-[200px] py-1 md:py-1 lg:py-2 hover:text-white text-center hover:bg-[#2563EB] inline-block">{reviews[activeIndex].hire}</span></Link>
             <span className='mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><a href={reviews[activeIndex].linkedin} target='_blank' rel='noopener noreferrer'><FaLinkedin/></a></span>
             <span className='mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><a href={reviews[activeIndex].x} target='_blank' rel='noopener noreferrer'><FaXTwitter/></a></span>
             <span className='mt-2 w-4 h-4 md:w-6 md:h-6 text-gray-400 hover:text-indigo-600'><a href={reviews[activeIndex].instagram} target='_blank' rel='noopener noreferrer'><FaInstagram/></a></span>

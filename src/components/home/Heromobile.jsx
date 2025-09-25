@@ -25,9 +25,8 @@ const Heromobile = () => {
             4.9/5 (Based on 10000+ happy users)
           </span>
         </div>
-      <h1 className='sm:text-[2.5rem] text-[26px] leading-9 font-bold text-center'>Enoverlab Makes Sure
-          You Never Start From <span className='sm:hidden'><br/></span><span className="text-[#1051FF]">Scratch</span></h1>
-<p className='text-sm text-center font-normal'>We empower startups, SMEs, and organizations by offering ready to use and customizable MVPs that help businesses scale their ideas without the typical hurdles of cost and time.</p>
+      <h1 className='sm:text-[2.5rem] text-[26px] leading-9 font-bold text-center'>Do you have a product idea or need a ready-to-use MVP? <span className='sm:hidden'><br/></span><span className="text-[#1A2DB3]">Enoverlab's</span> got you</h1>
+<p className='text-sm text-center font-normal'>We empower startups, SMEs, and organizations by offering ready to use and customizable MVPs that help businesses scale their ideas without the typical hurdles of cost and time. We also build fresh custom websites tailored to your unique ideas.</p>
       </motion.div>
 
 <Swiper

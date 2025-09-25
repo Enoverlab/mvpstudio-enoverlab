@@ -4,6 +4,12 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -100; // Offset in px
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
+
 const Footer = () => {
   return (
     <motion.footer
@@ -19,11 +25,11 @@ const Footer = () => {
       <section className="bg-[#fff] rounded-[20px] p-4 md:pb-10 lg:p-15">
       {/* CTA Banner */}
       <div className="mx-auto mb-12">
-        <div className="relative bg-[#1051FF] rounded-xl flex flex-row items-center justify-between px-4 md:px-16 py-4 sm:py-6 lg:py-10 overflow-hidden">
+        <div className="relative bg-[#1A2DB3] rounded-xl flex flex-row items-center justify-between px-4 md:px-16 py-4 sm:py-6 lg:py-10 overflow-hidden">
           <h2 className="flex text-white text-[12px] sm:text-[18px] md:text-[20px]lg:text-[28px] font-semibold text-left z-10 ">
             Grow your business fast with Enoverlab
           </h2>
-          <Link to='/mvpstudio'><button className="md:mt-0 bg-black hover:bg-white hover:shadow-xl text-white hover:text-black px-4 sm:px-7 py-3 rounded-lg font-semibold text-[11px] sm:text-base z-1 flex whitespace-pre">
+          <Link to='/mvpstudio'><button className="md:mt-0 bg-black hover:bg-white hover:shadow-xl text-white cursor-pointer hover:text-black px-4 sm:px-7 py-3 rounded-lg font-semibold text-[11px] sm:text-base z-1 flex whitespace-pre">
             Explore Now
           </button></Link>
           {/* Decorative circle */}
@@ -37,30 +43,30 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Company</h3>
           <ul className="space-y-3 text-[#222]">
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/about'>About</Link></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/mvpstudio'>MVP Studio</Link></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Partners</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/contact'>Contact Us</Link></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><Link to='/about'>About</Link></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><Link to='/mvpstudio'>MVP Studio</Link></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><a href="#">Partners</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><Link to='/contact'>Contact Us</Link></li>
           </ul>
         </div>
         {/* Explore */}
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Explore</h3>
           <ul className="space-y-3 text-[#222] ">
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><Link to='/mvpstudio'>Browse MVPs</Link></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Industries</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Case Studies</a></li>
-            <HashLink to='/#testimonials'><li className='text-[11px] md:text-base hover:text-[#1051FF]'>Testimonials</li></HashLink>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><Link to='/mvpstudio'>Browse MVPs</Link></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><a href="#">Industries</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><a href="#">Case Studies</a></li>
+            <HashLink to='/#testimonials' smooth scroll={scrollWithOffset}><li className='text-[11px] md:text-base hover:text-[#1A2DB3]'>Testimonials</li></HashLink>
           </ul>
         </div>
         {/* Support */}
         <div>
           <h3 className="font-semibold text-sm sm:text-lg mb-4">Support</h3>
           <ul className="space-y-3 text-[#222] ">
-            <HashLink to='/#faq'><li className='text-[11px] md:text-base hover:text-[#1051FF] pb-3'>FAQ</li></HashLink>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Help Center</a></li>
-            <li className='text-[11px] md:text-base hover:text-[#1051FF]'><a href="#">Terms of Use</a></li>
-            <Link to='/login'><li className='text-[11px] md:text-base hover:text-[#1051FF] whitespace-pre'>Submit a vetted MVP</li></Link>
+            <HashLink to='/#faq' smooth scroll={scrollWithOffset}><li className='text-[11px] md:text-base hover:text-[#1A2DB3] pb-3'>FAQ</li></HashLink>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><a href="#">Help Center</a></li>
+            <li className='text-[11px] md:text-base hover:text-[#1A2DB3]'><a href="#">Terms of Use</a></li>
+            <Link to='/login'><li className='text-[11px] md:text-base hover:text-[#1A2DB3] whitespace-pre'>Submit a vetted MVP</li></Link>
             
           </ul>
         </div>
@@ -69,9 +75,9 @@ const Footer = () => {
           <h3 className="font-semibold text-sm sm:text-lg mb-4">ContactUs</h3>
           <p className='text-[11px] md:text-base flex max-lg:justify-end'>(+234)9055654356</p>
           <div className='flex flex-row justify-between w-2/3 sm:w-1/2 gap-2 mt-3'>
-            <FaInstagram className='md:w-5 md:h-5 hover:text-indigo-700'/>
-            <FaFacebook className='md:w-5 md:h-5 hover:text-indigo-700'/>
-            <FaWhatsapp className='md:w-5 md:h-5 hover:text-indigo-700'/>
+            <FaInstagram className='md:w-5 md:h-5 hover:text-indigo-700 cursor-pointer'/>
+            <FaFacebook className='md:w-5 md:h-5 hover:text-indigo-700 cursor-pointer'/>
+            <FaWhatsapp className='md:w-5 md:h-5 hover:text-indigo-700 cursor-pointer'/>
           </div>
         </div>
       </div>

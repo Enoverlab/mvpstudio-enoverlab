@@ -111,10 +111,10 @@ const ProjectDetails = () => {
           <div className="w-full md:w-1/2 flex flex-col justify-center md:items-start max-md:text-center">
             <h2 className="font-semibold text-xl md:text-2xl mb-2 capitalize">{project.title}</h2>
             <p className="text-sm md:text-base mb-6 text-[#222]">{project.desc}</p>
-            <Link to='/contact' className='bg-[#2563eb] text-white px-6 py-2 md:py-3 rounded-lg w-full font-medium text-sm hover:bg-[#1051FF] transition mb-4 text-center'> Get this MVP
+            <Link to='/contact' className='bg-[#1A2DB3] text-white px-6 py-2 md:py-3 rounded-lg w-full font-medium text-sm hover:bg-[#2563EB] transition mb-4 text-center'> Get this MVP
             </Link>
             {/* <a href={project.explorelink} target='_blank' rel="noopener noreferrer" className='w-full'>
-              <button className="bg-[#2563eb] text-white px-6 py-2 md:py-3 rounded-lg w-full font-medium text-sm hover:bg-[#1051FF] transition mb-4">
+              <button className="bg-[#2563eb] text-white px-6 py-2 md:py-3 rounded-lg w-full font-medium text-sm hover:bg-[#2563EB] transition mb-4">
                 Explore
               </button>
             </a> */}
@@ -122,7 +122,7 @@ const ProjectDetails = () => {
         </div>
         {/* Experts Section */}
         <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
-          <div className='flex flex-row bg-[#1051FF] justify-center items-center w-[169px] h-[31px] text-white text-sm md:text-base leading-6 rounded-2xl mb-1'>
+          <div className='flex flex-row bg-[#1A2DB3] justify-center items-center w-[169px] h-[31px] text-white text-sm md:text-base leading-6 rounded-2xl mb-1'>
             <img src='/whychoose.png' className='w-4 mr-2 h-[19px] leading-1.5' alt="icon" />
             Meet The Team
           </div>
@@ -156,7 +156,7 @@ const ProjectDetails = () => {
                         <FaFacebook/>
                         <FaWhatsapp/>
                       </div>
-                      <Link to='/talentsform'><button className="text-[7px] lg:text-[8px] text-[#1051FF] w-[100%] bg-[#DFDFEE] rounded-lg py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#1051FF] flex justify-center items-center whitespace-pre">
+                      <Link to='/talentsform'><button className="text-[7px] lg:text-[8px] cursor-pointer text-[#1A2DB3] w-[100%] bg-[#DFDFEE] rounded-lg py-0.5 md:py-1 lg:py-2 hover:text-white hover:bg-[#2563EB] flex justify-center items-center whitespace-pre">
                         Hire <span>{expert.expertfirstname}</span>
                       </button></Link>
                     </div>
@@ -166,7 +166,7 @@ const ProjectDetails = () => {
             </div>
           )}
           <Link to='/mvpstudio'>
-            <button className="bg-[#2563eb] text-white px-6 py-2 rounded-lg font-medium text-sm hover:bg-[#1051FF] transition mb-4">
+            <button className="bg-[#1A2DB3] cursor-pointer text-white px-6 py-2 rounded-lg font-medium text-sm hover:bg-[#2563EB] transition mb-4">
               See All &rarr;
             </button>
           </Link>

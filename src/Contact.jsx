@@ -117,11 +117,11 @@ const Contact = () => {
                   placeholder="Enter your message here"
                   value={form.message}
                   onChange={handleInputChange}
-                  className="border rounded-md px-3 py-2 text-sm outline-none min-h-[80px] resize-none"
+                  className="border rounded-md px-3 py-2 text-sm outline-none min-h-[80px] resize-none cursor-pointer"
                 />
                 <button
                           type="submit"
-                          className="bg-[#2563eb] text-white rounded-md py-3 font-medium text-base mt-2 hover:bg-[#1051FF] transition inline-block" disabled={isSending}
+                          className="bg-[#1A2DB3] text-white rounded-md py-3 font-medium text-base mt-2 hover:bg-[#2563EB] transition inline-block" disabled={isSending}
                         >{isSending ? "Sending..." : "Send Message"}<span className="inline-block"><MdArrowOutward/></span>
                         </button>
               </form>
@@ -145,7 +145,7 @@ const Contact = () => {
           <p className="text-gray-800 mb-4 font-medium italic">We will get back to you shortly</p>
          <button
             onClick={() => setIsSubmitted(false)} // Close popup
-            className="bg-blue-950 text-white px-4 py-2 rounded hover:bg-black max-md:text-sm"
+            className="bg-blue-950 text-white px-4 cursor-pointer py-2 rounded hover:bg-black max-md:text-sm"
           >
             Close
           </button>

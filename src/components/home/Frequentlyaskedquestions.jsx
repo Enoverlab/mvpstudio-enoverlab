@@ -22,7 +22,7 @@ const Frequentlyaskedquestions = () => {
       damping: 20,
     }}
         className='w-full md:w-1/2 flex flex-col gap-5 p-5 md:py-20 md:px-10'>
-        <h2 className='text-[24px] text-[#1051FF] font-semibold '>FAQ</h2>
+        <h2 className='text-[24px] text-[#1A2DB3] font-semibold '>FAQ</h2>
         <h1 className='text-[24px] md:text-[36px] lg:text-[48px]'>Frequently Asked Questions</h1>
         <p className='text-[14px] md:text-[16px]'>We complied a list of answers to address your most pressing questions regarding our services</p>
         </motion.div>
@@ -35,15 +35,15 @@ const Frequentlyaskedquestions = () => {
       delay: 0.3,
       damping: 20,
     }}
-            className="w-full md:w-1/2 p-7">
+            className="w-full md:w-1/2 p-7 group">
               {questions.map((item, idx) => (
-                <div key={idx} className="overflow-hidden mt-6">
+                <div key={idx} className="overflow-hidden mt-6 group-hover:text-white">
                   <button
-                    className="w-full flex justify-between items-center px-6 py-4 hover:bg-[#1051FF] font-semibold transition text-left text-sm md:text-base border-1 border-[#C4C4FF]"
+                    className="w-full flex cursor-pointer justify-between items-center px-6 py-4 hover:bg-[#2563EB] group-hover:text-white font-semibold transition text-left text-sm md:text-base border-1 border-[#C4C4FF]"
                     onClick={() => toggle(idx)}
                   >
-                    <span className='text-[#313030] max-lg:text-sm'>{item.q}</span>
-                    <span className="ml-4 text-black">{openIndex === idx ? "-" : "+"}</span>
+                    <span className='text-[#313030] max-lg:text-sm '>{item.q}</span>
+                    <span className="ml-4 text-black hover:text-white">{openIndex === idx ? "-" : "+"}</span>
                   </button>
                   <div
                     className="transition-all duration-900 ease-in-out"

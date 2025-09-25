@@ -2,17 +2,17 @@ import React, { useEffect, useRef, useState } from 'react'
 import { MdMenu, MdMenuOpen } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { IoIosArrowDown } from 'react-icons/io';
+// import { IoIosArrowDown } from 'react-icons/io';
 
 
  
 
 
 const Navbar = () => {
-      const [dropdownOpen, setDropdownOpen] = useState(false);
+      // const [dropdownOpen, setDropdownOpen] = useState(false);
       const [isOpen, setIsOpen] = useState(false);
         const menuRef = useRef(null);
-        const dropRef = useRef(null);
+        // const dropRef = useRef(null);
         const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -45,16 +45,16 @@ const Navbar = () => {
       return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        if (dropRef.current && !dropRef.current.contains(event.target)) {
-          setDropdownOpen(false);
-        }
-      };
+    // useEffect(() => {
+    //   const handleClickOutside = (event) => {
+    //     if (dropRef.current && !dropRef.current.contains(event.target)) {
+    //       setDropdownOpen(false);
+    //     }
+    //   };
   
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
+    //   document.addEventListener('mousedown', handleClickOutside);
+    //   return () => document.removeEventListener('mousedown', handleClickOutside);
+    // }, []);
   return (
     <motion.nav
     initial={{ y: -100 }}
@@ -74,26 +74,30 @@ const Navbar = () => {
                  >
                    <li className={`block ${isOpen ? "pt-10" : "max-lg:hidden"} pt-2 justify-between 
                           text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><NavLink to="/" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Home</NavLink></li>
+
+                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
+                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><NavLink to="/services" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Services</NavLink></li>
+
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
   text-black active:text-indigo-900 lg:hover:text-indigo-900 max-lg:text-black `} 
-  ref={dropRef}
+  // ref={dropRef}
 >
   <NavLink to="/about" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>About Us</NavLink>
   {/* Dropdown Button */}
-  <div className='inline-block ml-1'>
+  {/* <div className='inline-block ml-1'>
     <button
       className="cursor-pointer lg:block relative"
       onClick={() => setDropdownOpen((open) => !open)}
     >
       <IoIosArrowDown />
     </button>
-  </div>
+  </div> */}
   {/* Dropdown Section */}
-  {dropdownOpen && (
+  {/* {dropdownOpen && (
     <ul className='lg:absolute lg:top-14 lg:left-[40%] bg-white shadow-lg rounded-lg p-4 z-50 duration-500 hover:text-blue-700 text-sm'>
       <NavLink to="/services" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Services</NavLink>
     </ul>
-  )}
+  )} */}
 </li>
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><NavLink to="/talents" className={({ isActive }) => `text-black hover:text-indigo-900 ${isActive ? 'text-indigo-900' : ''}`}>Talents</NavLink></li>
@@ -102,7 +106,7 @@ const Navbar = () => {
                    <li className={`block ${isOpen ? "" : "max-lg:hidden"} pt-2 justify-between 
                          text-black active:text-indigo-900 hover:text-indigo-900 max-lg:text-black max-lg:hover:text-blue-700`} ><Link to="/mvpstudio">MVP Studio</Link></li>
                  </ul>
-        <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] w-[169px] rounded-lg inset-0 bg-[#1051FF] text-white hover:bg-white hover:text-[#1051FF] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
+        <Link to='/contact'><button className='max-lg:hidden mr-5 h-[48px] cursor-pointer w-[169px] rounded-lg inset-0 bg-[#1A2DB3] text-white hover:bg-white hover:text-[#1A2DB3] hover:ring-1 hover:ring-white text-center'>Let's Talk</button></Link>
         <button 
           className="block cursor-pointer lg:hidden"
           onClick={() => setIsOpen(!isOpen)}>
