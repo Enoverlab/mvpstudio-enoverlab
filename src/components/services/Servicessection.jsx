@@ -44,7 +44,7 @@ const Servicessection = () => {
                   <img src='/iconone.png' className='w-14 h-14'/>
                   <h1 className='font-bold'>UI/UX Design</h1>
                   <p className='text-sm md:text-base'>We combine creativity with strategy through branding, web design, and UI/UX design, to create designs that pass your message effectively and elevate your brand's visual impression.</p>
-                  <Link>
+                  <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 cursor-pointer py-2 rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
                   </Link>
                   </div>
@@ -93,7 +93,7 @@ const Servicessection = () => {
                   <img src='/icontwo.png' className='w-14 h-14'/>
                   <h1 className='font-bold'>Web Development</h1>
                   <p className='text-sm md:text-base'>We create custom websites and web applications that fit your business needs. Our team uses the latest technology to make your site look good and work perfectly on any device.</p>
-                  <Link>
+                  <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
                   </Link>
                   </div>
@@ -137,7 +137,7 @@ const Servicessection = () => {
                   <img src='/iconthree.png' className='w-14 h-14'/>
                   <h1 className='font-bold'>Product Management</h1>
                   <p className='text-sm md:text-base'>We take your product idea and turn it into reality, handling everything from design and engineering to testing and launch. We give attention to all processes involved in building a great product.</p>
-                  <Link>
+                  <Link to='/contact'>
                   <button className='bg-[#1A2DB3] text-white px-6 py-2 cursor-pointer rounded-lg font-medium text-sm flex items-center gap-2 hover:bg-[#2563EB] transition'>Contact Us <span>&#8594;</span></button>
                   </Link>
                   </div>
