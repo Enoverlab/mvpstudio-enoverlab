@@ -28,7 +28,7 @@ const Servicessection = () => {
                 </div>
               </motion.div>
 
-
+            <div className='md:p-10 lg:px-15'>
               <motion.div
             initial={{ opacity:0, x:40 }}
     whileInView={{ opacity:1, x:0}}
@@ -167,6 +167,7 @@ const Servicessection = () => {
                   </div>
                 </div>
             </motion.div>
+            </div>
     </section>
     </>
   )
